@@ -1,15 +1,14 @@
-import Image from "next/image";
 import Navbar from "@/components/navbar/navbar";
-import HomeSection from "@/components/home/home";
-import AboutSection from "@/components/about/about";
+import ProjectSection from "@/components/project/project";
 import { ThemeProvider } from "@/components/context/ThemeContext";
+import "@/app/globals.css"; // Tailwind styles are typically included here
 
-export default function Home() {
+export default function ProjectPage() {
   return (
     <div>
       <ThemeProvider>
         <Navbar />
-        <HomeSection />
+        <ProjectSection />
       </ThemeProvider>
     </div>
   );

@@ -34,7 +34,7 @@ const Navbar = () => {
                 <ul className="flex space-x-8 items-center font-bold border-r-2 border-[#494848] px-5 ">
                   <li>
                     <a
-                      href="#home"
+                      href="/"
                       className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
                     >
                       Home
@@ -42,7 +42,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#about"
+                      href="/about"
                       className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
                     >
                       About
@@ -50,7 +50,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#projects"
+                      href="/project"
                       className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
                     >
                       Projects
@@ -58,7 +58,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#blogs"
+                      href="/blogs"
                       className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
                     >
                       Blogs
@@ -66,7 +66,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="#contact"
+                      href="/contact"
                       className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
                     >
                       Contact
@@ -212,7 +212,7 @@ const Navbar = () => {
             <ul className="px-4 pt-2 space-y-4 text-[#494848] dark:text-white flex-grow">
               <li>
                 <a
-                  href="#home"
+                  href="/"
                   className="block text-lg hover:text-[#909090]"
                   onClick={handleCloseMenu}
                 >
@@ -221,7 +221,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="/about"
                   className="block text-lg hover:text-[#909090]"
                   onClick={handleCloseMenu}
                 >
@@ -230,7 +230,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#projects"
+                  href="/project"
                   className="block text-lg hover:text-[#909090]"
                   onClick={handleCloseMenu}
                 >
@@ -239,7 +239,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#blogs"
+                  href="/blogs"
                   className="block text-lg hover:text-[#909090]"
                   onClick={handleCloseMenu}
                 >
@@ -248,7 +248,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="block text-lg hover:text-[#909090]"
                   onClick={handleCloseMenu}
                 >

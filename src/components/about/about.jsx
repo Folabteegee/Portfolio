@@ -11,7 +11,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-[#E8E9E8]  dark:bg-gray-800 dark:text-white font-montserrat py-16 text-[#494848]"
+      className="bg-[#E8E9E8]  dark:bg-gray-800 dark:text-white font-montserrat py-36 text-[#494848]"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Heading */}
