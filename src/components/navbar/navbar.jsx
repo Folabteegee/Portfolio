@@ -24,14 +24,14 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <h1 className=" text-2xl font-bold">
-                Taiwo A <span className="text-green-500">.</span>
+                Taiwo A <span className="text-yellow-500">.</span>
               </h1>
             </div>
 
             {/* Menu for larger screens */}
             <div className="hidden md:block">
               <div className="flex ">
-                <ul className="flex space-x-8 items-center font-bold border-r-2 border-[#494848] px-5 ">
+                <ul className="flex space-x-8 items-center font-bold border-r-2 border-[#494848] dark:border-white px-5 ">
                   <li>
                     <a
                       href="/"
@@ -58,10 +58,10 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
-                      href="/blogs"
+                      href="/experience"
                       className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
                     >
-                      Blogs
+                      Experience
                     </a>
                   </li>
                   <li>
@@ -183,7 +183,12 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="fixed top-0 right-0 h-full w-3/4 bg-[#D4D4D4] dark:bg-gray-600 z-20 shadow-lg">
+        <div
+          className="fixed top-0 justify-center flex right-0 h-2/3 w-3/4 bg-[#D4D4D4] dark:bg-gray-600 z-20 shadow-lg"
+          style={{
+            borderBottomLeftRadius: "90%",
+          }}
+        >
           <div className="flex flex-col font-montserrat h-full">
             {/* Cancel Button */}
             <div className="p-4">
@@ -239,11 +244,11 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/blogs"
+                  href="/experience"
                   className="block text-lg hover:text-[#909090]"
                   onClick={handleCloseMenu}
                 >
-                  Blogs
+                  Experience
                 </a>
               </li>
               <li>

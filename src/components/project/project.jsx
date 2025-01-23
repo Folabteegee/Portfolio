@@ -11,9 +11,9 @@ const ProjectSection = () => {
       id="projects"
       className=" py-36 font-montserrat   dark:bg-gray-800 dark:text-white bg-[#E8E9E8] "
     >
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-[#494848] dark:text-white mb-12">
-          Projects <span className="text-green-500">.</span>
+      <div className="max-w-7xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto px-6">
+        <h2 className="text-4xl font-bold text-center hover:scale-110 transition-transform duration-300 text-[#494848] dark:text-white mb-12">
+          My Projects <span className="text-yellow-500">.</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Project 1 */}
@@ -22,7 +22,7 @@ const ProjectSection = () => {
               <Image
                 src={portfolio}
                 alt="portfolio"
-                className="w-full h-full object-cover"
+                className="w-full h-full hover:scale-110 transition-transform duration-300 object-cover"
               />
             </div>
             <div className="p-6">
@@ -35,7 +35,7 @@ const ProjectSection = () => {
                 href="https://your-portfolio-link.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-all duration-300"
+                className="inline-block mt-4 bg-yellow-500 text-white font-bold px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
               >
                 View Project
               </a>
@@ -48,7 +48,7 @@ const ProjectSection = () => {
               <Image
                 src={invoice3}
                 alt="invoice3"
-                className="w-full h-full object-cover"
+                className="w-full h-full hover:scale-110 transition-transform duration-300 object-cover"
               />
             </div>
             <div className="p-6">
@@ -61,7 +61,7 @@ const ProjectSection = () => {
                 href="https://free-invoice-generator.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-all duration-300"
+                className="inline-block mt-4 bg-yellow-500 font-bold text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
               >
                 View Project
               </a>
@@ -74,7 +74,7 @@ const ProjectSection = () => {
               <Image
                 src={crypto}
                 alt="crypto"
-                className="w-full h-full object-cover"
+                className="w-full h-full hover:scale-110 transition-transform duration-300 object-cover"
               />
             </div>
             <div className="p-6">
@@ -87,7 +87,7 @@ const ProjectSection = () => {
                 href="https://tk-cryptodashboard.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-all duration-300"
+                className="inline-block mt-4 bg-yellow-500 font-bold text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
               >
                 View Project
               </a>
