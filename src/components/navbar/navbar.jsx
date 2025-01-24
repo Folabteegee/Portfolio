@@ -184,7 +184,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div
-          className="fixed top-0 justify-center flex right-0 h-2/3 w-3/4 bg-[#D4D4D4] dark:bg-gray-600 z-20 shadow-lg"
+          className="fixed top-0 justify-center flex right-0 h-1/3 w-3/4 bg-[#D4D4D4] dark:bg-gray-600 z-20 shadow-lg"
           style={{
             borderBottomLeftRadius: "90%",
           }}

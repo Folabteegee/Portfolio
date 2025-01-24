@@ -10,7 +10,7 @@ const ExperienceSection = () => {
       id="experience"
       className="bg-[#E8E9E8] dark:text-white  dark:bg-gray-800 py-36 font-montserrat"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto px-6">
         <div className="border-b-2 border-[#494848] dark:border-white h-24 w-full pb-5 flex justify-center">
           <Image
             src={workspace}
@@ -105,13 +105,9 @@ const ExperienceSection = () => {
             <p className="mt-4 dark:text-white text-sm text-[#494848]">
               I am constantly learning and improving my skills in web
               development. From completing online courses to reading books, I
-              dedicate time every day to enhance my knowledge.
+              dedicate time to enhance my knowledge.
             </p>
             <ul className="mt-4 list-disc pl-5 text-sm dark:text-white text-[#494848]">
-              <li>
-                Completed a full-stack web development course on platforms like
-                freeCodeCamp and Udemy.
-              </li>
               <li>
                 Learned and implemented new JavaScript libraries and frameworks,
                 including React and Next.js.
@@ -133,40 +129,44 @@ const ExperienceSection = () => {
             className="hover:scale-110 transition-transform duration-300 object-cover"
           />
         </div>
-        <h2 className="text-4xl font-bold text-center pt-3  dark:text-white text-[#494848] mb-12">
+        <h2 className="text-4xl font-bold text-center pt-3 dark:text-white text-[#494848] mb-12">
           Education <span className="text-yellow-500">.</span>
         </h2>
-        <div className="bg-white  dark:bg-gray-600 shadow-md rounded-lg p-6">
-          <h3 className="text-2xl font-semibold  dark:text-white text-[#494848]">
-            Current Education
-          </h3>
-          <p className="text-sm  dark:text-white text-[#494848] mt-2">
-            2020 - Present
-          </p>
-          <p className="mt-4 text-sm  dark:text-white text-[#494848]">
-            I am currently pursuing a degree in Computer Science, where I am
-            learning about data structures, algorithms, and software engineering
-            principles. My education serves as the foundation for my web
-            development skills.
-          </p>
-          <ul className="mt-4 list-disc pl-5 text-sm  dark:text-white text-[#494848]">
-            <li>
-              Studied fundamental programming languages such as Python, Java,
-              and C++.
-            </li>
-            <li>
-              Completed courses in web development and web technologies,
-              including HTML, CSS, JavaScript, and React.
-            </li>
-            <li>
-              Learned about databases, both SQL and NoSQL, and how to design
-              efficient backend systems.
-            </li>
-            <li>
-              Worked on group projects focusing on building software solutions
-              to solve real-world problems.
-            </li>
-          </ul>
+        <div className="space-y-12">
+          <div className="bg-white dark:bg-gray-600 shadow-md rounded-lg p-6">
+            <h3 className="text-2xl font-semibold dark:text-white text-[#494848]">
+              Obafemi Awolowo University
+            </h3>
+            <h3 className="text-sm font-semibold dark:text-white text-[#494848]">
+              Bachelor, Science
+            </h3>
+            <p className="text-sm dark:text-white text-[#494848] mt-2">
+              2021 - Present
+            </p>
+            <p className="mt-4 text-sm dark:text-white text-[#494848]">
+              I am currently pursuing a degree in Microbiology, where I study
+              microorganisms and their impact on human health, the environment,
+              and biotechnology. My coursework includes laboratory techniques,
+              microbial genetics, and immunology, providing me with a strong
+              foundation in scientific research and analysis.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-600 shadow-md rounded-lg p-6">
+            <h3 className="text-2xl font-semibold dark:text-white text-[#494848]">
+              King's Will College
+            </h3>
+            <h3 className="text-sm font-semibold dark:text-white text-[#494848]">
+              Senior Secondary Certificate Examination
+            </h3>
+            <p className="text-sm dark:text-white text-[#494848] mt-2">
+              2014 - 2020
+            </p>
+            <p className="mt-4 text-sm dark:text-white text-[#494848]">
+              Completed Secondary School with Senior Secondary Certificate
+              Examination (SSCE) result
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -38,7 +38,7 @@ const AboutSection = () => {
       ref={aboutRef}
       className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat py-36 text-[#494848]"
     >
-      <div className="max-w-7xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto px-6 ">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="hover:scale-110 transition-transform duration-300 text-4xl font-extrabold">
@@ -54,10 +54,10 @@ const AboutSection = () => {
         </div>
 
         {/* Hobby Cards */}
-        <div>
+        <div className="p-5">
           {/* Coding */}
           <div
-            className={`max-w-5xl mx-auto flex p-5 flex-row max-md:flex-col items-center gap-20 transition-transform duration-700 ${
+            className={`max-w-5xl mx-auto border-b-2 border-[#494848] py-4 dark:border-white flex flex-row max-md:flex-col items-center gap-20 transition-transform duration-700 ${
               isInView
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-20 opacity-0"
@@ -84,7 +84,7 @@ const AboutSection = () => {
 
           {/* Gaming */}
           <div
-            className={`max-w-5xl mx-auto flex flex-row max-sm:flex-col-reverse items-center gap-20 transition-transform duration-700 delay-200 ${
+            className={`max-w-5xl mx-auto flex pt-5  border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col-reverse items-center gap-20 transition-transform duration-700 delay-200 ${
               isInView
                 ? "translate-x-0 opacity-100"
                 : "translate-x-20 opacity-0"
@@ -111,7 +111,7 @@ const AboutSection = () => {
 
           {/* Drawing */}
           <div
-            className={`max-w-5xl mx-auto flex flex-row max-md:flex-col items-center gap-20 transition-transform duration-700 delay-400 ${
+            className={`max-w-5xl mx-auto pt-5  border-b-2 border-[#494848] py-4 dark:border-white flex flex-row max-md:flex-col items-center gap-20 transition-transform duration-700 delay-400 ${
               isInView
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-20 opacity-0"
@@ -138,7 +138,7 @@ const AboutSection = () => {
 
           {/* Sports */}
           <div
-            className={`max-w-5xl mx-auto flex flex-row max-sm:flex-col-reverse items-center gap-20 transition-transform duration-700 delay-600 ${
+            className={`max-w-5xl mx-auto pt-5  flex flex-row max-sm:flex-col-reverse items-center gap-20 transition-transform duration-700 delay-600 ${
               isInView
                 ? "translate-x-0 opacity-100"
                 : "translate-x-20 opacity-0"

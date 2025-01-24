@@ -36,7 +36,7 @@ const HomeSection = () => {
     <div className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white">
       <section
         id="home"
-        className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"
+        className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 max-md:mt-2  min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"
       >
         <div className="max-w-5xl mx-auto flex flex-col  duration-1000 opacity-0 translate-y-10 animate-fade-in-up md:flex-row items-center gap-20">
           {/* Profile Picture */}
