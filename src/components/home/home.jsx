@@ -5,46 +5,25 @@ import Link from "next/link";
 import settings from "/public/settings.png";
 import diamond1 from "/public/diamond1.png";
 import briefcase1 from "/public/briefcase1.png";
+import me1 from "/public/me1.png";
 import Image from "next/image";
 
 const HomeSection = () => {
-  const [isInView, setIsInView] = useState(false);
-  const skillBoxesRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-        }
-      },
-      { threshold: 0.2 } // Trigger when 20% of the element is in view
-    );
-
-    if (skillBoxesRef.current) {
-      observer.observe(skillBoxesRef.current);
-    }
-
-    return () => {
-      if (skillBoxesRef.current) {
-        observer.unobserve(skillBoxesRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white">
+    <div className="bg-[#E8E9E8] dark:bg-gray-800 pb-56 dark:text-white">
       <section
         id="home"
         className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 max-md:mt-2  min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"
       >
         <div className="max-w-5xl mx-auto flex flex-col  duration-1000 opacity-0 translate-y-10 animate-fade-in-up md:flex-row items-center gap-20">
           {/* Profile Picture */}
-          <div className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
-            <img
-              src="/path-to-your-image.jpg" // Replace with your actual image path
-              alt="Taiwo Afolabi"
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+          <div className="w-96 h-96 max-sm:w-80 max-sm:h-80 rounded-full bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
+            <Image
+              src={me1}
+              alt="Taiwo"
+              width={400}
+              height={400}
+              className="mx-auto hover:scale-110 dark:text-white transition-transform duration-300"
             />
           </div>
 
@@ -68,7 +47,7 @@ const HomeSection = () => {
             <div className="mt-6">
               <div className="flex gap-12">
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="relative inline-block px-6 py-3 max-sm:px-3 max-sm:py-3 bg-yellow-500 text-white rounded-lg shadow-md transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-yellow-800 opacity-0 transition-opacity duration-300 rounded-lg hover:opacity-100"></span>
@@ -88,22 +67,12 @@ const HomeSection = () => {
         </div>
       </section>
 
-      <section
-        className="font-montserrat dark:bg-gray-800 dark:text-white"
-        ref={skillBoxesRef}
-      >
+      <section className="font-montserrat bg-[#E8E9E8] dark:bg-gray-800 dark:text-white">
         {/* Skill Boxes */}
-        <div
-          className={`max-w-7xl font-montserrat rounded-lg mx-auto flex flex-col md:flex-row justify-center gap-8 ${
-            isInView ? "animate-fade-in" : "opacity-0"
-          }`}
-        >
+        <div className="max-w-7xl font-montserrat rounded-lg mx-auto flex flex-col md:flex-row justify-center gap-8">
           {/* Skill 1 */}
           <div
-            className={`flex flex-col dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-lg shadow-2xl p-8 text-center transition-transform duration-700 ${
-              isInView
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-20 opacity-0"
+            className={`flex flex-col dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-lg shadow-2xl p-8 text-center transition-transform duration-700 
             }`}
           >
             <Image
@@ -123,10 +92,8 @@ const HomeSection = () => {
 
           {/* Skill 2 */}
           <div
-            className={`flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200 ${
-              isInView
-                ? "translate-y-0 opacity-100"
-                : "translate-y-20 opacity-0"
+            className={`flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200
+             
             }`}
           >
             <Image
@@ -146,10 +113,9 @@ const HomeSection = () => {
 
           {/* Skill 3 */}
           <div
-            className={`flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400 ${
-              isInView
-                ? "translate-x-0 opacity-100"
-                : "translate-x-20 opacity-0"
+            className={`flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400 
+              
+               
             }`}
           >
             <Image

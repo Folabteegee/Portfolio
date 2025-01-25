@@ -23,9 +23,9 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className=" text-2xl font-bold">
+              <Link href="/" className=" text-2xl font-bold ">
                 Taiwo A <span className="text-yellow-500">.</span>
-              </h1>
+              </Link>
             </div>
 
             {/* Menu for larger screens */}
@@ -118,6 +118,21 @@ const Navbar = () => {
             {/* Mobile menu toggle */}
             <div className="md:hidden flex gap-4">
               {/* Theme Toggle */}
+
+              <Link
+                className="pl-5 border-r-2 border-[#494848] dark:border-white  px-4"
+                href={"https://www.linkedin.com/in/taiwo-afolabi-b5b827227"}
+              >
+                <div className="">
+                  <Image
+                    src={linkedin2}
+                    alt="linkedinimg"
+                    width={30}
+                    height={30}
+                    className="mx-auto hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              </Link>
               <button
                 onClick={toggleTheme}
                 className="py-2 px-3 bg-white border-none text-xs max-sm:h-7 items-center justify-center font-poppins text-gray-600 rounded-lg"
@@ -194,7 +209,7 @@ const Navbar = () => {
             <div className="p-4">
               <button
                 onClick={handleCloseMenu}
-                className="text-[#494848]  dark:text-white  hover:text-[#909090] focus:outline-none"
+                className="text-[#494848]  dark:text-white hover:text-[#909090] focus:outline-none"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
