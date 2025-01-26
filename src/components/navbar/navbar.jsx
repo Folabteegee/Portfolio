@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import linkedin2 from "/public/linkedin2.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,11 +10,29 @@ import { ThemeContext } from "../context/ThemeContext";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const [time, setTime] = useState(new Date());
 
   // Close menu when clicking outside the menu box
   const handleCloseMenu = () => {
     setIsOpen(false);
   };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Get current day and time
+  const formattedTime = time.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  const formattedDay = time.toLocaleDateString("en-US", {
+    weekday: "short",
+  });
 
   return (
     <div className={`${isOpen ? "relative" : ""}`}>
@@ -66,6 +84,16 @@ const Navbar = () => {
                   </li>
                   <li>
                     <a
+                      href="/taiwoafolabiresume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
+                    >
+                      Resume
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="/contact"
                       className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
                     >
@@ -112,14 +140,21 @@ const Navbar = () => {
                     />
                   </div>
                 </Link>
+                {/* Live Clock */}
+                <div className="text-lg font-semibold  dark:border-white px-5">
+                  {formattedDay}, {formattedTime}
+                </div>
               </div>
             </div>
 
             {/* Mobile menu toggle */}
             <div className="md:hidden flex gap-4">
-              {/* Theme Toggle */}
-
-              <Link
+              {/* Live Clock */}
+              <div className="text-xs flex items-center font-semibold border-r-2 border-[#494848]  px-4 dark:border-white ">
+                {formattedDay}, {formattedTime}
+              </div>
+              {/* linked in */}
+              {/* <Link
                 className="pl-5 border-r-2 border-[#494848] dark:border-white  px-4"
                 href={"https://www.linkedin.com/in/taiwo-afolabi-b5b827227"}
               >
@@ -132,7 +167,8 @@ const Navbar = () => {
                     className="mx-auto hover:scale-110 transition-transform duration-300"
                   />
                 </div>
-              </Link>
+              </Link> */}
+              {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
                 className="py-2 px-3 bg-white border-none text-xs max-sm:h-7 items-center justify-center font-poppins text-gray-600 rounded-lg"
@@ -199,7 +235,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div
-          className="fixed top-0 justify-center flex right-0 h-1/3 w-3/4 bg-[#D4D4D4] dark:bg-gray-600 z-20 shadow-lg"
+          className="fixed top-0 justify-center flex right-0 h-2/5 w-3/4 bg-[#D4D4D4] dark:bg-gray-600 z-20 shadow-lg"
           style={{
             borderBottomLeftRadius: "90%",
           }}
@@ -266,6 +302,18 @@ const Navbar = () => {
                   Experience
                 </a>
               </li>
+              <li>
+                <a
+                  href="/taiwoafolabiresume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-lg hover:text-[#909090]"
+                  onClick={handleCloseMenu}
+                >
+                  Resume
+                </a>
+              </li>
+
               <li>
                 <a
                   href="/contact"

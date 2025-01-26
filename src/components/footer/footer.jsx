@@ -87,7 +87,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://github.com/taiwoglory"
+                  href="https://github.com/folabteegee"
                   target="_blank"
                   className="flex items-center space-x-2 hover:text-[#909090]"
                 >

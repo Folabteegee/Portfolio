@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import {
   FaMapMarkerAlt,
@@ -9,6 +9,20 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import Link from "next/link";
+
+// Loader Component
+const Loader = () => {
+  return (
+    <div className="flex flex-col gap-1 items-center justify-center font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
+      <div className="flex space-x-2">
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-1000"></div>
+      </div>
+      <div>Please wait</div>
+    </div>
+  );
+};
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -52,6 +66,19 @@ const ContactSection = () => {
       });
   };
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
   return (
     <section
       id="contact"
@@ -68,7 +95,7 @@ const ContactSection = () => {
             <div className="flex items-center space-x-4">
               <FaMapMarkerAlt className="text-[#494848]  dark:text-white text-2xl" />
               <p className="text-[#494848]  dark:text-white">
-                Osun state, Nigeria
+                Ile-Ife, Osun state, Nigeria.
               </p>
             </div>
 

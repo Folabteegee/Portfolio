@@ -1,29 +1,56 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import settings from "/public/settings.png";
 import diamond1 from "/public/diamond1.png";
 import briefcase1 from "/public/briefcase1.png";
-import me1 from "/public/me1.png";
-import Image from "next/image";
+import me from "/public/me.png";
+
+// Loader Component
+const Loader = () => {
+  return (
+    <div className="flex flex-col gap-1 items-center justify-center font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
+      <div className="flex space-x-2">
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-1000"></div>
+      </div>
+      <div>Please wait</div>
+    </div>
+  );
+};
 
 const HomeSection = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
   return (
     <div className="bg-[#E8E9E8] dark:bg-gray-800 pb-56 dark:text-white">
       <section
         id="home"
-        className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 max-md:mt-2  min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"
+        className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 max-md:mt-2 min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"
       >
-        <div className="max-w-5xl mx-auto flex flex-col  duration-1000 opacity-0 translate-y-10 animate-fade-in-up md:flex-row items-center gap-20">
+        <div className="max-w-5xl mx-auto flex flex-col duration-1000 opacity-0 translate-y-10 animate-fade-in-up md:flex-row items-center gap-20">
           {/* Profile Picture */}
-          <div className="w-96 h-96 max-sm:w-80 max-sm:h-80 rounded-full bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
+          <div className="w-96 h-96 max-sm:w-80 max-sm:h-80 rounded-sm bg-yellow-500 overflow-hidden shadow-lg flex-shrink-0">
             <Image
-              src={me1}
-              alt="Taiwo"
+              src={me}
+              alt="me"
               width={400}
               height={400}
-              className="mx-auto hover:scale-110 dark:text-white transition-transform duration-300"
+              className="mx-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
 
@@ -67,14 +94,11 @@ const HomeSection = () => {
         </div>
       </section>
 
+      {/* Skills Section */}
       <section className="font-montserrat bg-[#E8E9E8] dark:bg-gray-800 dark:text-white">
-        {/* Skill Boxes */}
         <div className="max-w-7xl font-montserrat rounded-lg mx-auto flex flex-col md:flex-row justify-center gap-8">
           {/* Skill 1 */}
-          <div
-            className={`flex flex-col dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-lg shadow-2xl p-8 text-center transition-transform duration-700 
-            }`}
-          >
+          <div className="flex flex-col dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-lg shadow-2xl p-8 text-center transition-transform duration-700">
             <Image
               src={settings}
               alt="settings"
@@ -85,17 +109,12 @@ const HomeSection = () => {
             <h3 className="text-2xl pt-5 font-bold">Deeper Skillset</h3>
             <p className="mt-2 text-sm">
               I excel in crafting responsive and visually appealing web
-              applications using HTML, CSS, React.js, Next.js, and TailwindCSS,
-              combining creativity with modern development practices.
+              applications using HTML, CSS, React.js, Next.js, and TailwindCSS.
             </p>
           </div>
 
           {/* Skill 2 */}
-          <div
-            className={`flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200
-             
-            }`}
-          >
+          <div className="flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200">
             <Image
               src={briefcase1}
               alt="briefcase1"
@@ -105,19 +124,13 @@ const HomeSection = () => {
             />
             <h3 className="text-2xl pt-5 font-bold">Creative Work</h3>
             <p className="mt-2 text-sm">
-              I bring ideas to life with a blend of creativity and technical
-              expertise, designing engaging user experiences and innovative
-              solutions for modern web applications.
+              I bring ideas to life with creativity and technical expertise,
+              designing engaging user experiences.
             </p>
           </div>
 
           {/* Skill 3 */}
-          <div
-            className={`flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400 
-              
-               
-            }`}
-          >
+          <div className="flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400">
             <Image
               src={diamond1}
               alt="diamond1"
@@ -127,9 +140,8 @@ const HomeSection = () => {
             />
             <h3 className="text-2xl pt-5 font-bold">Strong Dedication</h3>
             <p className="mt-2 text-sm">
-              With unwavering commitment to excellence, I strive to continuously
-              learn, adapt, and deliver high-quality web solutions that meet and
-              exceed expectations.
+              I strive to continuously learn, adapt, and deliver high-quality
+              web solutions that exceed expectations.
             </p>
           </div>
         </div>

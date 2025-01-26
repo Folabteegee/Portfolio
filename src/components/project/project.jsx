@@ -1,11 +1,37 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import invoice3 from "/public/invoice3.png";
 import crypto from "/public/crypto.png";
 import portfolio from "/public/portfolio.png";
 
+// Loader Component
+const Loader = () => {
+  return (
+    <div className="flex flex-col gap-1 items-center justify-center font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
+      <div className="flex space-x-2">
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-1000"></div>
+      </div>
+      <div>Please wait</div>
+    </div>
+  );
+};
 const ProjectSection = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
   return (
     <section
       id="projects"

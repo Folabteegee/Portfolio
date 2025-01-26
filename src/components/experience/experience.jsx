@@ -1,10 +1,38 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import workspace from "/public/workspace.png";
 import education from "/public/education.png";
 import Image from "next/image";
+import Link from "next/link";
+
+// Loader Component
+const Loader = () => {
+  return (
+    <div className="flex flex-col gap-1 items-center justify-center font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
+      <div className="flex space-x-2">
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-1000"></div>
+      </div>
+      <div>Please wait</div>
+    </div>
+  );
+};
 
 const ExperienceSection = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
   return (
     <section
       id="experience"
@@ -28,12 +56,21 @@ const ExperienceSection = () => {
               Personal Web Development Projects
             </h3>
             <p className="text-sm dark:text-white text-[#494848] mt-2">
-              Ongoing - Self-driven
+              Ongoing
             </p>
             <p className="mt-4 text-sm dark:text-white text-[#494848]">
-              As a self-taught web developer, I have been building several web
-              applications to hone my skills. I work on a range of projects,
-              from simple landing pages to complex, interactive websites.
+              As a web developer, I have been building several web applications
+              to hone my skills. I work on a range of projects, from simple
+              landing pages to complex, interactive websites. Much respect to my
+              brother,{" "}
+              <Link
+                href="https://www.linkedin.com/in/samuel-afolabi"
+                className="text-yellow-500 font-semibold"
+              >
+                SAMUEL AFOLABI
+              </Link>
+              , who has been guiding me through my journey of code from the
+              beginning to this moment.
             </p>
             <ul className="mt-4 list-disc pl-5 dark:text-white text-sm text-[#494848]">
               <li>
@@ -45,7 +82,7 @@ const ExperienceSection = () => {
                 track trending coins.
               </li>
               <li>
-                Developed a invoice generator app with React, allowing users to
+                Developed an invoice generator app with React, allowing users to
                 generate invoices for businesses.
               </li>
               <li>
@@ -61,13 +98,12 @@ const ExperienceSection = () => {
               Skills Acquired
             </h3>
             <p className="text-sm dark:text-white text-[#494848] mt-2">
-              Ongoing - Self-Taught
+              Ongoing
             </p>
             <p className="mt-4 text-sm dark:text-white text-[#494848]">
-              Through my self-driven learning, I've gained hands-on experience
-              and acquired key skills in the field of web development. I
-              continue to grow and expand my knowledge in various areas of
-              coding and web design.
+              Through my learning, I've gained hands-on experience and acquired
+              key skills in the field of web development. I continue to grow and
+              expand my knowledge in various areas of coding and web design.
             </p>
             <ul className="mt-4 list-disc pl-5 text-sm dark:text-white text-[#494848]">
               <li>HTML, CSS, and JavaScript to build interactive web pages.</li>

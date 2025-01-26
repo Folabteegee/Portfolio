@@ -1,13 +1,43 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import coding2 from "/public/coding2.png";
 import gaming from "/public/gaming.png";
 import drawing from "/public/drawing.png";
 import sports from "/public/sports.png";
+import techStackImage from "/public/techStackImage.png";
+import learningImage2 from "/public/learningImage2.png";
+import goalsImage from "/public/goalsImage.png";
+
+// Loader Component
+const Loader = () => {
+  return (
+    <div className="flex flex-col gap-1 items-center justify-center font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
+      <div className="flex space-x-2">
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
+        <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-1000"></div>
+      </div>
+      <div>Please wait</div>
+    </div>
+  );
+};
 
 const AboutSection = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
+
   return (
     <section
       id="about"
@@ -20,53 +50,87 @@ const AboutSection = () => {
             About Me <span className="text-yellow-500">.</span>
           </h2>
           <p className="mt-4 text-2xl max-sm:text-lg font-medium">
-            Hi! I’m Taiwo, a passionate web developer who loves to code from my
-            desk in Osun state,Nigeria.
-            <br /> When I’m not coding, I enjoy gaming, drawing, sports and
-            creative solutions.
-            <br /> These hobbies keep me inspired and balanced!
+            Hi! I’m Taiwo, a passionate Frontend Engineer from my desk in Osun
+            State, Nigeria.
+            <br /> I specialize in crafting user-friendly and visually appealing
+            websites.
           </p>
         </div>
 
+        {/* Tech Stack */}
+
+        <div className="max-w-5xl mx-auto flex pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col items-center gap-20">
+          <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
+            <Image
+              src={techStackImage}
+              alt="techstack"
+              width={400}
+              height={400}
+              className="mx-auto hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold">Tech Stack 🖱 </h3>
+            <p className="mt-1 text-sm">
+              HTML & CSS | JavaScript | React.js | Next.js | TailwindCSS | Figma
+            </p>
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto flex pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col-reverse items-center gap-20">
+          <div>
+            <h3 className="text-2xl font-bold">What I'm Learning 💻</h3>
+            <p className="mt-1 text-sm">
+              Currently, I'm focusing on mastering TypeScript and improving my
+              backend development skills.
+            </p>
+          </div>
+          <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
+            <Image
+              src={learningImage2}
+              alt="learning2"
+              width={400}
+              height={400}
+              className="mx-auto hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto flex pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col items-center gap-20">
+          <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
+            <Image
+              src={goalsImage}
+              alt="goal"
+              width={400}
+              height={400}
+              className="mx-auto hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold">Goals & Aspirations 📌</h3>
+            <p className="mt-1 text-sm">
+              My long-term goal is to work on innovative projects, build
+              scalable applications, and contribute to open-source communities.
+            </p>
+          </div>
+        </div>
         {/* Hobby Cards */}
-        <div className="p-5">
-          {/* Coding */}
-          <div
-            className={`max-w-5xl mx-auto border-b-2 border-[#494848] py-4 dark:border-white flex flex-row max-md:flex-col items-center gap-20 transition-transform duration-700
-             
-            }`}
-          >
-            <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
-              <Image
-                src={coding2}
-                alt="coding2"
-                width={400}
-                height={400}
-                className="mx-auto hover:scale-110 transition-transform duration-300"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold">Coding</h3>
-              <p className="mt-1 text-sm">
-                Building efficient, dynamic websites and applications is my
-                passion. I love solving problems and bringing ideas to life
-                through clean, maintainable code.
-              </p>
-            </div>
+        <div className="pt-10">
+          <div className="text-3xl font-semibold py-10">
+            {" "}
+            When I’m not coding, I enjoy gaming, drawing, and playing sports.
+            These hobbies keeps me fit and balanced{" "}
+            <span className="text-yellow-500">.</span>
           </div>
 
-          {/* Gaming */}
-          <div
-            className={`max-w-5xl mx-auto flex pt-5  border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col-reverse items-center gap-20 transition-transform duration-700 delay-200
-             
-            }`}
-          >
+          <div className="max-w-5xl mx-auto flex pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col-reverse items-center gap-20">
             <div>
               <h3 className="text-2xl font-bold">Gaming</h3>
               <p className="mt-1 text-sm">
                 I enjoy immersing myself in adventure, strategy, and sports
-                games. Gaming helps me relax and often inspires my creativity
-                for projects.
+                games. Gaming helps me relax and often inspires my creativity. I
+                like action games like{" "}
+                <span className="font-semibold">CODM</span> and sorts.
               </p>
             </div>
             <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
@@ -81,11 +145,7 @@ const AboutSection = () => {
           </div>
 
           {/* Drawing */}
-          <div
-            className={`max-w-5xl mx-auto pt-5  border-b-2 border-[#494848] py-4 dark:border-white flex flex-row max-md:flex-col items-center gap-20 transition-transform duration-700 delay-400
-            
-            }`}
-          >
+          <div className="max-w-5xl mx-auto pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex flex-row max-md:flex-col items-center gap-20">
             <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
               <Image
                 src={drawing}
@@ -106,17 +166,14 @@ const AboutSection = () => {
           </div>
 
           {/* Sports */}
-          <div
-            className={`max-w-5xl mx-auto pt-5  flex flex-row max-sm:flex-col-reverse items-center gap-20 transition-transform duration-700 delay-600 
-              
-            }`}
-          >
+          <div className="max-w-5xl mx-auto pt-5 flex flex-row max-sm:flex-col-reverse items-center gap-20">
             <div>
               <h3 className="text-2xl font-bold">Sports</h3>
               <p className="mt-1 text-sm">
-                Sports keep me energized! Whether it’s soccer or jogging,
+                Sports keep me energized! Whether it’s soccer or athletics,
                 staying active helps me stay focused and maintain a healthy
-                work-life balance.
+                work-life balance. I love Lionel Messi and I like to tease those
+                who think he's not the GOAT of football 😂.
               </p>
             </div>
             <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
