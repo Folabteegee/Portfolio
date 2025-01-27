@@ -44,7 +44,7 @@ const HomeSection = () => {
       >
         <div className="max-w-5xl mx-auto flex flex-col duration-1000 opacity-0 translate-y-10 animate-fade-in-up md:flex-row items-center gap-20">
           {/* Profile Picture */}
-          <div className="w-96 h-96 max-sm:w-80 max-sm:h-80 rounded-sm bg-yellow-500 overflow-hidden shadow-lg flex-shrink-0">
+          <div className="w-96 h-96 max-sm:w-80 max-sm:h-80 rounded-2xl bg-yellow-500 overflow-hidden shadow-lg flex-shrink-0">
             <Image
               src={me}
               alt="me"
@@ -72,7 +72,7 @@ const HomeSection = () => {
             </p>
 
             <div className="mt-6">
-              <div className="flex gap-12">
+              <div className="flex justify-evenly gap-12">
                 <a
                   href="/contact"
                   className="relative inline-block px-6 py-3 max-sm:px-3 max-sm:py-3 bg-yellow-500 text-white rounded-lg shadow-md transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
