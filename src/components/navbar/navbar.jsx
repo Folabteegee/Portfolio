@@ -255,7 +255,7 @@ const Navbar = () => {
             </div>
 
             {/* Menu Items */}
-            <ul className="px-4 pt-2 space-y-4 text-[#494848] dark:text-white flex-grow">
+            <ul className="px-4 pt-2 space-y-4 text-gray-500 dark:text-white flex-grow">
               <li className=" hover:scale-110 transition-transform duration-300">
                 <a
                   href="/"
