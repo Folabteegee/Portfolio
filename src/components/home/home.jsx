@@ -11,7 +11,7 @@ import me from "/public/me.png";
 // Loader Component
 const Loader = () => {
   return (
-    <div className="flex flex-col gap-1 items-center justify-center font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
+    <div className="flex flex-col gap-1 items-center justify-center text-gray-500 font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
       <div className="flex space-x-2">
         <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce"></div>
         <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-500"></div>

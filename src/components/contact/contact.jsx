@@ -13,7 +13,7 @@ import Link from "next/link";
 // Loader Component
 const Loader = () => {
   return (
-    <div className="flex flex-col gap-1 items-center justify-center font-montserrat dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
+    <div className="flex flex-col gap-1 items-center justify-center font-montserrat text-gray-500 dark:text-white h-screen bg-[#E8E9E8] dark:bg-gray-800">
       <div className="flex space-x-2">
         <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce"></div>
         <div className="w-6 h-6 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
@@ -85,7 +85,7 @@ const ContactSection = () => {
       className="bg-[#E8E9E8] dark:text-white  dark:bg-gray-800 py-36 font-montserrat px-6"
     >
       <div className="max-w-6xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto">
-        <h2 className="text-3xl font-bold text-center hover:scale-110 transition-transform duration-300 dark:text-white text-[#494848] mb-8">
+        <h2 className="text-3xl font-bold text-center hover:scale-110 transition-transform duration-300 dark:text-white text-gray-500 mb-8">
           Contact Me<span className="text-yellow-500"> .</span>
         </h2>
 
@@ -93,43 +93,43 @@ const ContactSection = () => {
           {/* Left Side - Contact Details */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
-              <FaMapMarkerAlt className="text-[#494848]  dark:text-white text-2xl" />
-              <p className="text-[#494848]  dark:text-white">
+              <FaMapMarkerAlt className="text-gray-500  dark:text-white text-2xl" />
+              <p className="text-gray-500  dark:text-white">
                 Ile-Ife, Osun state, Nigeria.
               </p>
             </div>
 
             <div className="flex items-center space-x-4">
-              <FaEnvelope className="text-[#494848]  dark:text-white text-2xl" />
-              <p className="text-[#494848]  dark:text-white">
+              <FaEnvelope className="text-gray-500 dark:text-white text-2xl" />
+              <p className="text-gray-500 dark:text-white">
                 taiwoglory136@gmail.com
               </p>
             </div>
 
             <div className="flex items-center space-x-4">
-              <FaPhone className="text-[#494848]  dark:text-white text-2xl" />
-              <p className="text-[#494848]  dark:text-white">
+              <FaPhone className="text-gray-500  dark:text-white text-2xl" />
+              <p className="text-gray-500  dark:text-white">
                 +234 906 012 2891
               </p>
             </div>
 
             <div className="flex items-center space-x-4">
-              <FaLinkedin className="text-[#494848]  dark:text-white text-2xl" />
+              <FaLinkedin className="text-gray-500  dark:text-white text-2xl" />
               <Link
                 href="https://www.linkedin.com/in/taiwo-afolabi-b5b827227"
                 target="_blank"
-                className="text-[#494848]  dark:text-white hover:text-[#909090]"
+                className="text-gray-500 dark:text-white hover:text-[#909090]"
               >
                 LinkedIn
               </Link>
             </div>
 
             <div className="flex items-center space-x-4">
-              <FaGithub className="text-[#494848]  dark:text-white text-2xl" />
+              <FaGithub className="text-gray-500  dark:text-white text-2xl" />
               <Link
                 href="https://github.com/Folabteegee"
                 target="_blank"
-                className="text-[#494848]  dark:text-white hover:text-[#909090]"
+                className="text-gray-500  dark:text-white hover:text-[#909090]"
               >
                 GitHub
               </Link>
@@ -138,7 +138,7 @@ const ContactSection = () => {
 
           {/* Right Side - Contact Form */}
           <div className="bg-white dark:bg-gray-600 shadow-md rounded-lg p-6">
-            <h3 className="text-xl font-semibold dark:text-white text-[#494848] mb-4">
+            <h3 className="text-xl font-semibold dark:text-white text-gray-500 mb-4">
               Send Me a Message <span className="text-yellow-500"> .</span>
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -148,7 +148,7 @@ const ContactSection = () => {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-3 border border-gray-300 dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#494848]"
+                className="w-full p-3 border border-gray-300 dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
                 required
               />
               <input
@@ -157,7 +157,7 @@ const ContactSection = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 border border-gray-300  dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#494848]"
+                className="w-full p-3 border border-gray-300  dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
                 required
               />
               <input
@@ -166,7 +166,7 @@ const ContactSection = () => {
                 placeholder="Your Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full p-3 border border-gray-300  dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#494848]"
+                className="w-full p-3 border border-gray-300  dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
               />
               <textarea
                 name="message"
@@ -174,7 +174,7 @@ const ContactSection = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows="5"
-                className="w-full p-3 border border-gray-300  dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-[#494848]"
+                className="w-full p-3 border border-gray-300  dark:text-black rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500"
                 required
               ></textarea>
 

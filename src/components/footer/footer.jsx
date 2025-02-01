@@ -12,12 +12,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#D4D4D4] dark:bg-gray-700 text-[#494848] dark:text-white py-10 max-sm:py-20 font-montserrat">
+    <footer className="bg-[#D4D4D4] dark:bg-gray-700 text-gray-500 dark:text-white py-10 max-sm:py-20 font-montserrat">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8">
           {/* About*/}
           <div>
-            <h3 className="border-b-2 border-black dark:border-white font-bold text-lg py-2">
+            <h3 className="border-b-2 border-gray-500 dark:border-white font-bold text-lg py-2">
               Taiwo A<span className="text-yellow-500"> .</span>
             </h3>
             <div className="mt-3 space-y-2">
@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Pages */}
           <div>
-            <h3 className="text-lg border-b-2  border-black dark:border-white py-2 font-bold">
+            <h3 className="text-lg border-b-2  border-gray-500 dark:border-white py-2 font-bold">
               Pages <span className="text-yellow-500"> .</span>
             </h3>
             <ul className="mt-3 space-y-2">
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Work Contacts */}
           <div>
-            <h3 className="text-lg border-b-2  border-black dark:border-white py-2 font-bold">
+            <h3 className="text-lg border-b-2  border-gray-500 dark:border-white py-2 font-bold">
               Work Contact <span className="text-yellow-500"> .</span>
             </h3>
             <ul className="mt-3 space-y-2">
@@ -109,7 +109,7 @@ const Footer = () => {
 
           {/* Social Life */}
           <div>
-            <h3 className="text-lg border-b-2  border-black dark:border-white py-2 font-bold">
+            <h3 className="text-lg border-b-2  border-gray-500 dark:border-white py-2 font-bold">
               Social Life <span className="text-yellow-500"> .</span>
             </h3>
             <ul className="mt-3 space-y-2">

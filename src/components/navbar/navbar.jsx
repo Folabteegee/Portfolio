@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div className={`${isOpen ? "relative" : ""}`}>
-      <nav className="bg-[#D4D4D4] fixed top-0 left-0 w-full z-10  dark:bg-gray-600 dark:text-white font-montserrat text-[#494848] shadow-md">
+      <nav className="bg-[#D4D4D4] fixed top-0 left-0 w-full z-10  dark:bg-gray-600 dark:text-white font-montserrat text-gray-500 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
