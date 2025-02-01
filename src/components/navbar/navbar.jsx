@@ -32,6 +32,7 @@ const Navbar = () => {
   const formattedTime = time.toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
+    second: "2-digit",
   });
 
   const formattedDay = time.toLocaleDateString("en-US", {
