@@ -84,7 +84,10 @@ const HomeSection = () => {
                   <div className="text-gray-500 dark:text-gray-300 text-1xl font-bold">
                     GitHub
                   </div>
-                  <Link href="https://github.com/Folabteegee">
+                  <Link
+                    className="text-gray-500"
+                    href="https://github.com/Folabteegee"
+                  >
                     "https://github.com/Folabteegee"
                   </Link>
                 </div>
@@ -98,7 +101,7 @@ const HomeSection = () => {
       <section className="font-montserrat bg-[#E8E9E8] dark:bg-gray-800 dark:text-white">
         <div className="max-w-7xl font-montserrat rounded-lg mx-auto flex flex-col md:flex-row justify-center gap-8">
           {/* Skill 1 */}
-          <div className="flex flex-col dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-lg shadow-2xl p-8 text-center transition-transform duration-700">
+          <div className="flex flex-col text-gray-500 dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-lg shadow-2xl p-8 text-center transition-transform duration-700">
             <Image
               src={settings}
               alt="settings"
@@ -114,7 +117,7 @@ const HomeSection = () => {
           </div>
 
           {/* Skill 2 */}
-          <div className="flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200">
+          <div className="flex flex-col text-gray-500 dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200">
             <Image
               src={briefcase1}
               alt="briefcase1"
@@ -130,7 +133,7 @@ const HomeSection = () => {
           </div>
 
           {/* Skill 3 */}
-          <div className="flex flex-col dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400">
+          <div className="flex flex-col text-gray-500 dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400">
             <Image
               src={diamond1}
               alt="diamond1"
