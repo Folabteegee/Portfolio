@@ -9,6 +9,13 @@ import sports from "/public/sports.png";
 import techStackImage from "/public/techStackImage.png";
 import learningImage2 from "/public/learningImage2.png";
 import goalsImage from "/public/goalsImage.png";
+import css1 from "/public/css1.png";
+import html1 from "/public/html1.png";
+import js1 from "/public/js1.png";
+import react4 from "/public/react4.png";
+import tailwindcss from "/public/tailwindcss.png";
+import nextjs1 from "/public/nextjs1.png";
+import typescript from "/public/typescript.png";
 
 // Loader Component
 const Loader = () => {
@@ -69,17 +76,66 @@ const AboutSection = () => {
               className="mx-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <div>
-            <h3 className="text-2xl font-bold">Tech Stack 🖱 </h3>
-            <p className="mt-1 text-sm">
-              HTML & CSS | JavaScript | React.js | Next.js | TailwindCSS | Figma
+          <div className=" flex flex-col gap-5">
+            <h3 className="text-2xl font-bold">
+              Tech Stack <span className="text-yellow-500">.</span>{" "}
+            </h3>
+            <p className="mt-1 flex gap-5 text-sm">
+              <Image
+                src={html1}
+                alt="htmlimg"
+                width={50}
+                height={50}
+                className="mx-auto hover:scale-110 transition-transform duration-300"
+              />
+              <Image
+                src={css1}
+                alt="cssimg"
+                width={50}
+                height={50}
+                className="mx-auto hover:scale-110 transition-transform duration-300"
+              />
+
+              <Image
+                src={js1}
+                alt="jsimg"
+                width={50}
+                height={50}
+                className="mx-auto hover:scale-110 transition-transform duration-300"
+              />
+              <Image
+                src={react4}
+                alt="reactimg"
+                width={50}
+                height={50}
+                className="mx-auto hover:scale-110 transition-transform duration-300"
+              />
+              <Image
+                src={nextjs1}
+                alt="nextjsimg"
+                width={50}
+                height={50}
+                className="mx-auto hover:scale-110 transition-transform duration-300"
+              />
+              <Image
+                src={tailwindcss}
+                alt="tailwindimg"
+                width={50}
+                height={50}
+                className="mx-auto hover:scale-110 transition-transform duration-300"
+              />
             </p>
+            <div>
+              HTML | CSS | JavaScript | React.js | Next.js | TailwindCSS
+            </div>
           </div>
         </div>
 
         <div className="max-w-5xl mx-auto flex pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col-reverse items-center gap-20">
           <div>
-            <h3 className="text-2xl font-bold">What I'm Learning 💻</h3>
+            <h3 className="text-2xl font-bold">
+              What I'm Learning <span className="text-yellow-500">.</span>
+            </h3>
             <p className="mt-1 text-sm">
               Currently, I'm focusing on mastering TypeScript and improving my
               backend development skills.
@@ -107,7 +163,9 @@ const AboutSection = () => {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold">Goals & Aspirations 📌</h3>
+            <h3 className="text-2xl font-bold">
+              Goals & Aspirations <span className="text-yellow-500">.</span>
+            </h3>
             <p className="mt-1 text-sm">
               My long-term goal is to work on innovative projects, build
               scalable applications, and contribute to open-source communities.
@@ -125,7 +183,9 @@ const AboutSection = () => {
           {/* Gaming */}
           <div className="max-w-5xl mx-auto flex pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col-reverse items-center gap-20">
             <div>
-              <h3 className="text-2xl font-bold">Gaming</h3>
+              <h3 className="text-2xl font-bold">
+                Gaming <span className="text-yellow-500">.</span>
+              </h3>
               <p className="mt-1 text-sm">
                 I enjoy immersing myself in adventure, strategy, actions and
                 sports games. Gaming helps me relax and often inspires my
@@ -155,7 +215,9 @@ const AboutSection = () => {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold">Drawing</h3>
+              <h3 className="text-2xl font-bold">
+                Drawing <span className="text-yellow-500">.</span>
+              </h3>
               <p className="mt-1 text-sm">
                 Drawing is my creative outlet. I love sketching ideas and
                 improving my design sense, which enhances my work as a
@@ -167,12 +229,14 @@ const AboutSection = () => {
           {/* Sports */}
           <div className="max-w-5xl mx-auto pt-5 flex flex-row max-sm:flex-col-reverse items-center gap-20">
             <div>
-              <h3 className="text-2xl font-bold">Sports</h3>
+              <h3 className="text-2xl font-bold">
+                Sports <span className="text-yellow-500">.</span>
+              </h3>
               <p className="mt-1 text-sm">
                 Sports keep me energized! Whether it’s soccer or athletics,
                 staying active helps me stay focused and maintain a healthy
                 work-life balance. I love Lionel Messi and I like to tease those
-                who think he's not the GOAT of football 😂.
+                who think he's not the GOAT of football🙂.
               </p>
             </div>
             <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">
