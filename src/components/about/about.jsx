@@ -15,7 +15,6 @@ import js1 from "/public/js1.png";
 import react4 from "/public/react4.png";
 import tailwindcss from "/public/tailwindcss.png";
 import nextjs1 from "/public/nextjs1.png";
-import typescript from "/public/typescript.png";
 
 // Loader Component
 const Loader = () => {
