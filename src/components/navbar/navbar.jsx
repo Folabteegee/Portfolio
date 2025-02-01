@@ -77,7 +77,7 @@ const Navbar = () => {
                   </li>
                   <li className=" hover:scale-110 transition-transform duration-300">
                     <a
-                      href="/taiwoafolabiresume.pdf"
+                      href="/taiwo-afolabi-resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-[#909090]"
@@ -294,7 +294,7 @@ const Navbar = () => {
               </li>
               <li className=" hover:scale-110 transition-transform duration-300">
                 <a
-                  href="/taiwoafolabiresume.pdf"
+                  href="/taiwo-afolabi-resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-lg hover:text-[#909090]"
