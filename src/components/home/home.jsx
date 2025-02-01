@@ -85,7 +85,7 @@ const HomeSection = () => {
                     GitHub
                   </div>
                   <Link
-                    className="text-gray-500"
+                    className="text-gray-500 dark:text-white"
                     href="https://github.com/Folabteegee"
                   >
                     "https://github.com/Folabteegee"
@@ -117,7 +117,7 @@ const HomeSection = () => {
           </div>
 
           {/* Skill 2 */}
-          <div className="flex flex-col text-gray-500 dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200">
+          <div className="flex flex-col text-gray-500 dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-200">
             <Image
               src={briefcase1}
               alt="briefcase1"
@@ -133,7 +133,7 @@ const HomeSection = () => {
           </div>
 
           {/* Skill 3 */}
-          <div className="flex flex-col text-gray-500 dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400">
+          <div className="flex flex-col text-gray-500 dark:text-white dark:bg-gray-600 items-center bg-opacity-10 rounded-2xl shadow-2xl p-8 text-center transition-transform duration-700 delay-400">
             <Image
               src={diamond1}
               alt="diamond1"
