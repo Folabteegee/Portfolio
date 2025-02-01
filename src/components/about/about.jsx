@@ -31,7 +31,7 @@ const AboutSection = () => {
     // Simulate a loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds delay
+    }, 500); // 2 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
@@ -119,18 +119,17 @@ const AboutSection = () => {
           <div className="text-3xl font-semibold py-10">
             {" "}
             When I’m not coding, I enjoy gaming, drawing, and playing sports.
-            These hobbies keeps me fit and balanced{" "}
+            These hobbies keep me fit and balanced{" "}
             <span className="text-yellow-500">.</span>
           </div>
-
+          {/* Gaming */}
           <div className="max-w-5xl mx-auto flex pt-5 border-b-2 border-[#494848] py-4 dark:border-white flex-row max-sm:flex-col-reverse items-center gap-20">
             <div>
               <h3 className="text-2xl font-bold">Gaming</h3>
               <p className="mt-1 text-sm">
-                I enjoy immersing myself in adventure, strategy, and sports
-                games. Gaming helps me relax and often inspires my creativity. I
-                like action games like{" "}
-                <span className="font-semibold">CODM</span> and sorts.
+                I enjoy immersing myself in adventure, strategy, actions and
+                sports games. Gaming helps me relax and often inspires my
+                creativity. I like <span className="font-semibold">CODM</span>.
               </p>
             </div>
             <div className="w-96 h-64 rounded-md bg-gray-300 overflow-hidden shadow-lg flex-shrink-0">

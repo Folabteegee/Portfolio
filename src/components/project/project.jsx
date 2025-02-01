@@ -25,7 +25,7 @@ const ProjectSection = () => {
     // Simulate a loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds delay
+    }, 500); // 2 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
@@ -35,7 +35,7 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className=" py-36 font-montserrat   dark:bg-gray-800 text-[#494848] dark:text-white bg-[#E8E9E8] "
+      className=" py-36 font-montserrat dark:bg-gray-800 text-[#494848] dark:text-white bg-[#E8E9E8] "
     >
       <div className="max-w-7xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto px-6">
         <h2 className="text-4xl font-bold text-center hover:scale-110 transition-transform duration-300 text-[#494848] dark:text-white mb-12">
@@ -54,16 +54,12 @@ const ProjectSection = () => {
             <div className="p-6">
               <h3 className="text-lg font-bold">Portfolio Website</h3>
               <p className="mt-2 text-sm dark:text-white text-[#494848]">
-                A personal portfolio website built with React and TailwindCSS to
-                showcase my skills, projects, and experience.
+                A personal portfolio website built with NextJS and TailwindCSS
+                to showcase my skills, projects and experience, like the site
+                you're on at the moment - My own personal portfolio website.
               </p>
-              <a
-                href="https://your-portfolio-link.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 bg-yellow-500 text-white font-bold px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
-              >
-                View Project
+              <a className="inline-block mt-4 bg-yellow-500 text-[#494848]  font-bold px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300">
+                This Site
               </a>
             </div>
           </div>
@@ -87,7 +83,7 @@ const ProjectSection = () => {
                 href="https://free-invoice-generator.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 bg-yellow-500 font-bold text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
+                className="inline-block mt-4 bg-yellow-500 font-bold text-[#494848]  px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
               >
                 View Project
               </a>
@@ -113,7 +109,7 @@ const ProjectSection = () => {
                 href="https://tk-cryptodashboard.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 bg-yellow-500 font-bold text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
+                className="inline-block mt-4 bg-yellow-500 font-bold text-[#494848]  px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
               >
                 View Project
               </a>

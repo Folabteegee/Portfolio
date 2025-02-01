@@ -26,7 +26,7 @@ const ExperienceSection = () => {
     // Simulate a loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds delay
+    }, 500); // 2 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
@@ -46,7 +46,7 @@ const ExperienceSection = () => {
             className="hover:scale-110 transition-transform duration-300 object-cover"
           />
         </div>
-        <h2 className="text-4xl font-bold text-center pt-3 dark:text-white text-[#494848] mb-12">
+        <h2 className="text-4xl font-bold text-center pt-3 hover:scale-110 transition-transform duration-300 dark:text-white text-[#494848] mb-12">
           Experience <span className="text-yellow-500">.</span>
         </h2>
         <div className="space-y-12">
@@ -165,7 +165,7 @@ const ExperienceSection = () => {
             className="hover:scale-110 transition-transform duration-300 object-cover"
           />
         </div>
-        <h2 className="text-4xl font-bold text-center pt-3 dark:text-white text-[#494848] mb-12">
+        <h2 className="text-4xl font-bold text-center hover:scale-110 transition-transform duration-300 pt-3 dark:text-white text-[#494848] mb-12">
           Education <span className="text-yellow-500">.</span>
         </h2>
         <div className="space-y-12">

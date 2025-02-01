@@ -29,7 +29,7 @@ const HomeSection = () => {
     // Simulate a loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds delay
+    }, 500); // 2 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
@@ -40,7 +40,7 @@ const HomeSection = () => {
     <div className="bg-[#E8E9E8] dark:bg-gray-800 pb-56 dark:text-white">
       <section
         id="home"
-        className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 max-md:mt-2 min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"
+        className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 max-sm:mt-10 min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"
       >
         <div className="max-w-5xl mx-auto flex flex-col duration-1000 opacity-0 translate-y-10 animate-fade-in-up md:flex-row items-center gap-20">
           {/* Profile Picture */}
@@ -75,10 +75,10 @@ const HomeSection = () => {
               <div className="flex justify-evenly gap-12">
                 <a
                   href="/contact"
-                  className="relative inline-block px-6 py-3 max-sm:px-3 max-sm:py-3 bg-yellow-500 text-white rounded-lg shadow-md transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+                  className="relative inline-block px-6 py-3 max-sm:px-3 max-sm:py-3 bg-yellow-500 text-[#494848] rounded-lg shadow-md transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-yellow-800 opacity-0 transition-opacity duration-300 rounded-lg hover:opacity-100"></span>
-                  <span className="relative font-bold">Contact Me</span>
+                  <span className="relative font-bold">Get Connected</span>
                 </a>
                 <div>
                   <div className="text-gray-500 dark:text-gray-300 text-1xl font-bold">

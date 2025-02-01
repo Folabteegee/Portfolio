@@ -11,12 +11,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [time, setTime] = useState(new Date());
+  const [isClient, setIsClient] = useState(false); // Track if we are on the client
 
   // Close menu when clicking outside the menu box
   const handleCloseMenu = () => {
     setIsOpen(false);
   };
+
   useEffect(() => {
+    setIsClient(true); // Mark client rendering
     const timer = setInterval(() => {
       setTime(new Date());
     }, 1000);
@@ -24,7 +27,8 @@ const Navbar = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // Get current day and time
+  if (!isClient) return null; // Prevent server-side rendering of time
+
   const formattedTime = time.toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
@@ -50,53 +54,38 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="flex ">
                 <ul className="flex space-x-8 items-center font-bold border-r-2 border-[#494848] dark:border-white px-5 ">
-                  <li>
-                    <a
-                      href="/"
-                      className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
-                    >
+                  <li className=" hover:scale-110 transition-transform duration-300">
+                    <a href="/" className="hover:text-[#909090]">
                       Home
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="/about"
-                      className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
-                    >
+                  <li className=" hover:scale-110 transition-transform duration-300">
+                    <a href="/about" className="hover:text-[#909090]">
                       About
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="/project"
-                      className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
-                    >
+                  <li className=" hover:scale-110 transition-transform duration-300">
+                    <a href="/project" className="hover:text-[#909090]">
                       Projects
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="/experience"
-                      className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
-                    >
+                  <li className=" hover:scale-110 transition-transform duration-300">
+                    <a href="/experience" className="hover:text-[#909090]">
                       Experience
                     </a>
                   </li>
-                  <li>
+                  <li className=" hover:scale-110 transition-transform duration-300">
                     <a
                       href="/taiwoafolabiresume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
+                      className="hover:text-[#909090]"
                     >
                       Resume
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="/contact"
-                      className="hover:text-[#909090] hover:scale-110 transition-transform duration-300"
-                    >
+                  <li className=" hover:scale-110 transition-transform duration-300">
+                    <a href="/contact" className="hover:text-[#909090]">
                       Contact
                     </a>
                   </li>
@@ -104,7 +93,7 @@ const Navbar = () => {
                   {/* Theme Toggle */}
                   <button
                     onClick={toggleTheme}
-                    className="py-2 px-3 bg-white border-none text-xs max-sm:h-7 items-center justify-center font-poppins text-gray-600 rounded-lg"
+                    className="py-2 px-3 bg-white dark:bg-yellow-500  border-none text-xs max-sm:h-7 items-center justify-center font-poppins text-gray-600 rounded-lg"
                   >
                     {theme === "dark" ? (
                       <Image
@@ -171,7 +160,7 @@ const Navbar = () => {
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
-                className="py-2 px-3 bg-white border-none text-xs max-sm:h-7 items-center justify-center font-poppins text-gray-600 rounded-lg"
+                className="py-2 px-3 bg-white dark:bg-yellow-500 border-none text-xs max-sm:h-7 items-center justify-center font-poppins text-gray-600 rounded-lg"
               >
                 {theme === "dark" ? (
                   <Image
@@ -266,7 +255,7 @@ const Navbar = () => {
 
             {/* Menu Items */}
             <ul className="px-4 pt-2 space-y-4 text-[#494848] dark:text-white flex-grow">
-              <li>
+              <li className=" hover:scale-110 transition-transform duration-300">
                 <a
                   href="/"
                   className="block text-lg hover:text-[#909090]"
@@ -275,7 +264,7 @@ const Navbar = () => {
                   Home
                 </a>
               </li>
-              <li>
+              <li className=" hover:scale-110 transition-transform duration-300">
                 <a
                   href="/about"
                   className="block text-lg hover:text-[#909090]"
@@ -284,7 +273,7 @@ const Navbar = () => {
                   About
                 </a>
               </li>
-              <li>
+              <li className=" hover:scale-110 transition-transform duration-300">
                 <a
                   href="/project"
                   className="block text-lg hover:text-[#909090]"
@@ -293,7 +282,7 @@ const Navbar = () => {
                   Projects
                 </a>
               </li>
-              <li>
+              <li className=" hover:scale-110 transition-transform duration-300">
                 <a
                   href="/experience"
                   className="block text-lg hover:text-[#909090]"
@@ -302,7 +291,7 @@ const Navbar = () => {
                   Experience
                 </a>
               </li>
-              <li>
+              <li className=" hover:scale-110 transition-transform duration-300">
                 <a
                   href="/taiwoafolabiresume.pdf"
                   target="_blank"
@@ -314,7 +303,7 @@ const Navbar = () => {
                 </a>
               </li>
 
-              <li>
+              <li className=" hover:scale-110 transition-transform duration-300">
                 <a
                   href="/contact"
                   className="block text-lg hover:text-[#909090]"

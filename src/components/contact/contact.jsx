@@ -72,7 +72,7 @@ const ContactSection = () => {
     // Simulate a loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds delay
+    }, 500); // 2 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
@@ -85,11 +85,11 @@ const ContactSection = () => {
       className="bg-[#E8E9E8] dark:text-white  dark:bg-gray-800 py-36 font-montserrat px-6"
     >
       <div className="max-w-6xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto">
-        <h2 className="text-3xl font-bold text-center dark:text-white text-[#494848] mb-8">
+        <h2 className="text-3xl font-bold text-center hover:scale-110 transition-transform duration-300 dark:text-white text-[#494848] mb-8">
           Contact Me<span className="text-yellow-500"> .</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
           {/* Left Side - Contact Details */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
