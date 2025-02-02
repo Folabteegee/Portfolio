@@ -80,17 +80,15 @@ const HomeSection = () => {
                   <span className="absolute inset-0 bg-gradient-to-r from-yellow-600 to-yellow-800 opacity-0 transition-opacity duration-300 rounded-lg hover:opacity-100"></span>
                   <span className="relative font-bold">Get Connected</span>
                 </a>
-                <div>
+                <Link
+                  className="text-gray-500 dark:text-white"
+                  href="https://github.com/Folabteegee"
+                >
                   <div className="text-gray-500 dark:text-gray-300 text-1xl font-bold">
                     GitHub
                   </div>
-                  <Link
-                    className="text-gray-500 dark:text-white"
-                    href="https://github.com/Folabteegee"
-                  >
-                    "https://github.com/Folabteegee"
-                  </Link>
-                </div>
+                  <div>"https://github.com/Folabteegee"</div>
+                </Link>
               </div>
             </div>
           </div>
