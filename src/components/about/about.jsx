@@ -12,7 +12,7 @@ import goalsImage from "/public/goalsImage.png";
 import css1 from "/public/css1.png";
 import html1 from "/public/html1.png";
 import js1 from "/public/js1.png";
-import react4 from "/public/react4.png";
+import react from "/public/react.png";
 import tailwindcss from "/public/tailwindcss.png";
 import nextjs1 from "/public/nextjs1.png";
 
@@ -103,7 +103,7 @@ const AboutSection = () => {
                 className="mx-auto hover:scale-110 transition-transform duration-300"
               />
               <Image
-                src={react4}
+                src={react}
                 alt="reactimg"
                 width={50}
                 height={50}
