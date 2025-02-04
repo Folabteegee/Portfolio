@@ -37,7 +37,7 @@ const HomeSection = () => {
   if (loading) return <Loader />;
 
   return (
-    <div className="bg-[#E8E9E8] dark:bg-gray-800 pb-56 dark:text-white">
+    <div className="bg-[#E8E9E8] dark:bg-gray-800 overflow-x-hidden pb-56 dark:text-white">
       <section
         id="home"
         className="bg-[#E8E9E8] dark:bg-gray-800 dark:text-white font-montserrat mt-20 max-sm:mt-10 min-h-screen flex items-center justify-center px-6 md:px-16 lg:px-32"

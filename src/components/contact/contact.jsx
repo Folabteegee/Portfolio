@@ -82,7 +82,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="bg-[#E8E9E8] dark:text-white  dark:bg-gray-800 py-36 font-montserrat px-6"
+      className="bg-[#E8E9E8] dark:text-white overflow-x-hidden  dark:bg-gray-800 py-36 font-montserrat px-6"
     >
       <div className="max-w-6xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto">
         <h2 className="text-3xl font-bold text-center hover:scale-110 transition-transform duration-300 dark:text-white text-gray-500 mb-8">

@@ -36,7 +36,7 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="bg-[#E8E9E8] dark:text-white  dark:bg-gray-800 py-36 font-montserrat"
+      className="bg-[#E8E9E8] dark:text-white overflow-x-hidden dark:bg-gray-800 py-36 font-montserrat"
     >
       <div className="max-w-7xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto px-6">
         <div className="border-b-2 border-gray-500 dark:border-white h-24 w-full pb-5 flex justify-center">

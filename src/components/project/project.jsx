@@ -35,7 +35,7 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className=" py-36 font-montserrat dark:bg-gray-800 text-gray-500 dark:text-white bg-[#E8E9E8] "
+      className=" py-36 font-montserrat overflow-x-hidden dark:bg-gray-800 text-gray-500 dark:text-white bg-[#E8E9E8] "
     >
       <div className="max-w-7xl  duration-1000 opacity-0 translate-y-10 animate-fade-in-up mx-auto px-6">
         <h2 className="text-4xl font-bold text-center hover:scale-110 transition-transform duration-300 text-gray-500 dark:text-white mb-12">
