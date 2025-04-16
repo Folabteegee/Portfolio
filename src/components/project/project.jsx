@@ -4,6 +4,7 @@ import Image from "next/image";
 import invoice3 from "/public/invoice3.png";
 import crypto from "/public/crypto.png";
 import portfolio from "/public/portfolio.png";
+import ecommerce from "/public/ecommerce.png";
 
 // Loader Component
 const Loader = () => {
@@ -63,7 +64,6 @@ const ProjectSection = () => {
               </a>
             </div>
           </div>
-
           {/* Project 2 */}
           <div className="bg-white shadow-md dark:text-white dark:bg-gray-600 rounded-lg overflow-hidden">
             <div className="relative h-48 bg-[#D4D4D4]">
@@ -89,7 +89,6 @@ const ProjectSection = () => {
               </a>
             </div>
           </div>
-
           {/* Project 3 */}
           <div className="bg-white shadow-md dark:text-white dark:bg-gray-600 rounded-lg overflow-hidden">
             <div className="relative h-48 bg-[#D4D4D4]">
@@ -107,6 +106,33 @@ const ProjectSection = () => {
               </p>
               <a
                 href="https://tk-cryptodashboard.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 bg-yellow-500 font-bold text-gray-500  px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+
+          {/* project 4   */}
+          <div className="bg-white shadow-md dark:text-white dark:bg-gray-600 rounded-lg overflow-hidden">
+            <div className="relative h-48 bg-[#D4D4D4]">
+              <Image
+                src={ecommerce}
+                alt="ecommerce"
+                className="w-full h-full hover:scale-110 transition-transform duration-300 object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold">E-commerce website</h3>
+              <p className="mt-2 text-sm dark:text-white text-gray-500">
+                An E-commerce web that allows you browse through diverse range
+                of meticulously crafted garments, designed to bring out your
+                individuality and cater to your sense of style.
+              </p>
+              <a
+                href="https://shopnco.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-4 bg-yellow-500 font-bold text-gray-500  px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
