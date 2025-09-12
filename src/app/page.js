@@ -237,10 +237,10 @@ const NavbarHero = () => {
             </motion.a>
           </motion.div>
         </motion.div>
-        <div className="flex flex-row justify-between gap-5  px-5 lg:px-10">
+        <div className="flex flex-row justify-between gap-5 px-5 lg:px-10">
           <div className=" lg:pt-20 pt-40">
             <motion.h1
-              className="text-9xl md:text-9xl lg:text-[16rem] pl-20 lg:pl-60"
+              className="text-8xl md:text-9xl lg:text-[16rem] pl-20 lg:pl-60"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -248,7 +248,7 @@ const NavbarHero = () => {
               WEB
             </motion.h1>
             <motion.p
-              className="text-9xl md:text-9xl lg:text-[16rem] -mt-4 md:-mt-8 lg:-mt-16 leading-none"
+              className="text-8xl md:text-9xl lg:text-[16rem] -mt-4 md:-mt-8 lg:-mt-16 leading-none"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -285,8 +285,8 @@ const NavbarHero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <h1 className="italic text-center lg:text-right">
-              A Web Developer with 3 years of experience building responsive,
-              user-friendly websites and applications.
+              A Web Developer with <br /> 3 years of experience <br /> building
+              responsive, user-friendly <br /> websites and applications.
             </h1>
           </motion.div>
         </div>
