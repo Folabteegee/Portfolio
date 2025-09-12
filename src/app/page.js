@@ -284,14 +284,14 @@ const NavbarHero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <h1 className="italic text-center lg:text-right">
+            <h1 className="italic lg:text-right">
               A Web Developer with <br /> 3 years of experience <br /> building
               responsive, user-friendly <br /> websites and applications.
             </h1>
           </motion.div>
         </div>
         <motion.h1
-          className="items-center flex justify-center text-5xl md:text-4xl lg:text-7xl leading-none"
+          className="items-center flex justify-center pt-20 text-5xl md:text-4xl lg:text-7xl leading-none"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
