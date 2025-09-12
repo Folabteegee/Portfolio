@@ -40,6 +40,8 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         lora: ["Lora", "serif"],
         lato: ["Lato", "sans-serif"],
+        mangogrotesque: ["Mango Grotesque", "sans-serif"],
+        sora: ["Sora", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
