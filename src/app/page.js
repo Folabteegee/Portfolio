@@ -1,22 +1,3 @@
-// import Image from "next/image";
-// import Navbar from "@/components/navbar/navbar";
-// import HomeSection from "@/components/home/home";
-// import Footer from "@/components/footer/footer";
-// import AboutSection from "@/components/about/about";
-// import { ThemeProvider } from "@/components/context/ThemeContext";
-
-// export default function Home() {
-//   return (
-//     <div>
-//       <ThemeProvider>
-//         <Navbar />
-//         <HomeSection />
-//         <Footer />
-//       </ThemeProvider>
-//     </div>
-//   );
-// }
-
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
@@ -141,7 +122,7 @@ const NavbarHero = () => {
     <div className="font-mangogrotesque bg-gradient-to-r from-[#ECECEC] via-red-100 to-blue-100 text-red-600 text-3xl md:text-4xl lg:text-5xl overflow-hidden">
       {/* Mobile Menu Button */}
       <motion.div
-        className="lg:hidden fixed backdrop-blur-lg  bg-white/40 rounded-b-lg flex flex-row justify-between gap-96 p-5 z-50"
+        className="lg:hidden fixed top-0 left-0 right-0 backdrop-blur-lg bg-white/40 rounded-b-lg flex flex-row justify-between items-center p-4 z-50"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
@@ -298,7 +279,7 @@ const NavbarHero = () => {
             </motion.div>
           </div>
           <motion.div
-            className="text-2xl md:text-2xl lg:text-4xl pt-60  mt-10 lg:mt-24 lg:pr-5 max-w-lg"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-80 lg:pt-60 mt-5 lg:mt-24 lg:pr-5 max-w-md md:max-w-lg"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
