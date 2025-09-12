@@ -279,12 +279,12 @@ const NavbarHero = () => {
             </motion.div>
           </div>
           <motion.div
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-80 lg:pt-60 mt-5 lg:mt-24 lg:pr-5 max-w-md md:max-w-lg"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl pt-60 sm:pt-60 md:pt-80 lg:pt-60 mt-5 lg:mt-24 px-4 sm:px-5 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto lg:mx-0 lg:pr-5"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <h1 className="italic">
+            <h1 className="italic text-center lg:text-right">
               A Web Developer with 3 years of experience building responsive,
               user-friendly websites and applications.
             </h1>
