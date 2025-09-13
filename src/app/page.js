@@ -127,7 +127,7 @@ const NavbarHero = () => {
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
       >
-        <div className="text-red-600 pl-4">AFO</div>
+        <div className="text-red-600 pl-4">TAIWO</div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-red-600 focus:outline-none"
@@ -296,7 +296,7 @@ const NavbarHero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          TAYE{" "}
+          TAIWO{" "}
           <motion.span
             className="text-9xl md:text-8xl pl-5 lg:text-[16rem]"
             animate={{
@@ -630,13 +630,13 @@ const NavbarHero = () => {
           </div>
 
           <motion.div
-            className="flex flex-row lg:flex-row justify-between px-5 lg:px-0 pt-10 lg:pt-10"
+            className="flex flex-row lg:flex-row justify-between px-5 lg:px-5 pt-10 lg:pt-10"
             initial={{ opacity: 0 }}
             animate={isAboutInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <div className="text-7xl sm:text-6xl lg:text-7xl">
-              TAYE
+              TAIWO
               <br />
               AFO
             </div>
@@ -720,7 +720,7 @@ const NavbarHero = () => {
               </motion.div>
             </div>
             <motion.div
-              className="font-sora text-xl lg:text-3xl font-bold text-center lg:text-right mt-5 lg:mt-0 lg:pr-10 lg:pr-72"
+              className="font-sora text-xl lg:text-3xl font-bold text-center lg:text-right mt-5 lg:mt-0 lg:pr-72"
               variants={fadeIn}
             >
               He took the time to understand my vision and translated it into a
@@ -930,7 +930,7 @@ const NavbarHero = () => {
           </motion.div>
 
           <motion.div
-            className="text-[#ECECEC] text-center pt-20 lg:pt-48 text-9xl sm:text-7xl md:text-8xl lg:text-[26rem]"
+            className="text-[#ECECEC] text-center pt-20 lg:pt-48 text-9xl sm:text-7xl md:text-8xl lg:text-[20rem]"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{
               opacity: 1,
@@ -948,7 +948,7 @@ const NavbarHero = () => {
             }}
             viewport={{ once: true }}
           >
-            TAYE AFOLABI
+            TAIWO AFOLABI
           </motion.div>
 
           <motion.div
@@ -958,7 +958,7 @@ const NavbarHero = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div>TAYE AFOLABI</div>
+            <div>TAIWO AFOLABI</div>
             <div> © {new Date().getFullYear()}</div>
             <motion.div
               className="cursor-pointer hover:underline transition-all duration-300"
