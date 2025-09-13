@@ -167,7 +167,7 @@ const NavbarHero = () => {
       {/* navbar hero section   */}
       <div
         ref={heroRef}
-        className="mb-10 bg-[url('/whitewoman.png')] min-h-screen bg-center bg-no-repeat bg-[length:100%] lg:bg-[length:70%] relative "
+        className="mb-10 bg-[url('/happyguy.png')] min-h-screen bg-center bg-no-repeat bg-[length:100%] lg:bg-[length:70%] relative "
       >
         <motion.div
           className={`fixed w-full z-40 bg-gradient-to-r from-[#ECECEC] via-red-100 to-blue-100 transition-all duration-300 ${
