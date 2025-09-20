@@ -127,7 +127,7 @@ const NavbarHero = () => {
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
       >
-        <div className="text-red-600 pl-4">TAIWO</div>
+        <div className="text-red-600 pl-4">TAIWO A.</div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-red-600 focus:outline-none"
@@ -371,7 +371,7 @@ const NavbarHero = () => {
                 E-COMMERCE <br />
                 WEBSITE <br />
                 <span className="text-base md:text-lg lg:text-xl font-sora">
-                  NEXTJS, DUMMYAPI, TAILWINDCSS
+                  REACTJS, NEXTJS, DUMMYAPI, TAILWINDCSS
                 </span>
               </div>
               <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
@@ -403,9 +403,53 @@ const NavbarHero = () => {
             </div>
           </motion.div>
 
+          {/* card 1   */}
+          <motion.div
+            className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
+            initial={{ opacity: 0, y: 100 }}
+            animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.02 }}
+          >
+            <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
+              <div>
+                LEARNFI <br />
+                LANDING PAGE <br />
+                <span className="text-base md:text-lg lg:text-xl font-sora">
+                  REACTJS, NEXTJS, TAILWINDCSS, ATROPOSJS
+                </span>
+              </div>
+              <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
+                <div>
+                  A hands-on, community-driven platform to master blockchain,
+                  NFTs, DAOs, DeFi, and more. From zero to on-chain in weeks.
+                </div>
+                <motion.a
+                  href="https://learnfi.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 bg-red-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View Project
+                </motion.a>
+              </div>
+            </div>
+            <div className="text-[#ECECEC] lg:w-1/2 lg:mt-0">
+              <Image
+                src="/landing3.png"
+                alt="gcryptoimg"
+                width={800}
+                height={600}
+                className="w-full lg:h-auto h-96 object-cover"
+              />
+            </div>
+          </motion.div>
+
           {/* card 2   */}
           <motion.div
-            className="flex flex-col lg:flex-row  border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:my-5 mx-5"
+            className="flex flex-col lg:flex-row  border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -417,7 +461,7 @@ const NavbarHero = () => {
                 <br />
                 DASHBOARD <br />
                 <span className="text-base md:text-lg lg:text-xl font-sora">
-                  NEXTJS, COINGECKOAPI, TAILWINDCSS
+                  REACTJS, NEXTJS, COINGECKOAPI, TAILWINDCSS
                 </span>
               </div>
               <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
@@ -452,7 +496,7 @@ const NavbarHero = () => {
 
           {/* card 3  */}
           <motion.div
-            className="flex flex-col lg:flex-row  border-b-8 border-l-8 border-blue-500 rounded-xl justify-between mt-10 lg:mt-5 mx-5"
+            className="flex flex-col lg:flex-row  border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -462,8 +506,8 @@ const NavbarHero = () => {
               <div>
                 INVOICE <br />
                 GENERATOR <br />
-                <span className="text-xl font-sora">
-                  NEXTJS, CONTEXTAPI, TAILWINDCSS
+                <span className="text-base md:text-lg lg:text-xl font-sora">
+                  REACTJS, NEXTJS, CONTEXTAPI, TAILWINDCSS
                 </span>
               </div>
               <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
@@ -896,6 +940,7 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
+                    x
                     <FaLinkedin /> <span>LINKEDIN</span>
                   </Link>
                 </motion.div>
