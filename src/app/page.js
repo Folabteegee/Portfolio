@@ -119,7 +119,7 @@ const NavbarHero = () => {
   };
 
   return (
-    <div className="font-mangogrotesque bg-gradient-to-r from-[#ECECEC] via-red-100 to-blue-100 text-red-600 text-3xl md:text-4xl lg:text-5xl overflow-hidden">
+    <div className="font-mangogrotesque  text-gray-600 text-3xl md:text-4xl lg:text-5xl overflow-hidden">
       {/* Mobile Menu Button */}
       <motion.div
         className="lg:hidden fixed top-0 left-0 right-0 backdrop-blur-lg bg-white/40 rounded-b-lg flex flex-row justify-between items-center p-4 z-50"
@@ -127,10 +127,10 @@ const NavbarHero = () => {
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
       >
-        <div className="text-red-600 pl-4">TAIWO A.</div>
+        <div className="text-gray-600 pl-4">TAIWO A.</div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-red-600 focus:outline-none"
+          className="text-gray-600 focus:outline-none"
         >
           {isMenuOpen ? (
             <svg
@@ -167,10 +167,10 @@ const NavbarHero = () => {
       {/* navbar hero section   */}
       <div
         ref={heroRef}
-        className="mb-10 bg-[url('/happyguy.png')] min-h-screen bg-center bg-no-repeat bg-[length:100%] lg:bg-[length:70%] relative "
+        className="mb-10 bg-[url('/developer3.png')] rounded-3xl mx-10 min-h-screen bg-center bg-no-repeat bg-[length:100%] lg:bg-[length:70%] relative"
       >
         <motion.div
-          className={`fixed w-full z-40 bg-gradient-to-r from-[#ECECEC] via-red-100 to-blue-100 transition-all duration-300 ${
+          className={`fixed w-full z-40 bg-white transition-all duration-300 ${
             isMenuOpen
               ? "h-screen flex items-center justify-center"
               : "h-0 overflow-hidden"
@@ -193,7 +193,7 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              WORK
+              WORKS
             </motion.a>
             <motion.a
               href="#services"
@@ -271,10 +271,10 @@ const NavbarHero = () => {
             >
               <Image
                 src="/scrolldown.png"
-                alt="ecomimg"
+                alt="scrldwnmimg"
                 width={80}
                 height={80}
-                className="pt-40 brightness-0 invert sepia saturate-100 hue-rotate-0 contrast-100 [filter:invert(27%)_sepia(89%)_saturate(7481%)_hue-rotate(356deg)_brightness(90%)_contrast(80%)]"
+                className="pt-40 brightness-30 invert-[36%] sepia-0 saturate-0 hue-rotate-0 contrast-700"
               />
             </motion.div>
           </div>
@@ -330,7 +330,7 @@ const NavbarHero = () => {
       {/* works   */}
       <div
         ref={worksRef}
-        className="bg-red-600 scroll-mt-20 transition-all duration-500"
+        className="bg-gray-600 scroll-mt-20 transition-all duration-500"
       >
         <motion.h1
           className="text-9xl md:text-9xl lg:text-[16rem] text-[#ECECEC] text-center py-6"
@@ -371,7 +371,7 @@ const NavbarHero = () => {
                 E-COMMERCE <br />
                 WEBSITE <br />
                 <span className="text-base md:text-lg lg:text-xl font-sora">
-                  REACTJS, NEXTJS, DUMMYAPI, TAILWINDCSS
+                  -REACTJS, NEXTJS, DUMMYAPI, TAILWINDCSS
                 </span>
               </div>
               <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
@@ -384,7 +384,7 @@ const NavbarHero = () => {
                   href="https://shopnco.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-red-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300"
+                  className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -428,7 +428,7 @@ const NavbarHero = () => {
                   href="https://learnfi.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-red-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300"
+                  className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -474,7 +474,7 @@ const NavbarHero = () => {
                     href="https://tk-cryptodashboard.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-4 bg-red-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300"
+                    className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -520,7 +520,7 @@ const NavbarHero = () => {
                     href="https://free-invoice-generator.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-4 bg-red-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-all duration-300"
+                    className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -544,7 +544,7 @@ const NavbarHero = () => {
         {/* services   */}
         <div
           ref={servicesRef}
-          className="bg-red-600 mt-10 lg:mt-6 scroll-mt-20 transition-all duration-500"
+          className="bg-gray-600 mt-10 lg:mt-6 scroll-mt-20 transition-all duration-500"
         >
           <motion.div
             className="text-[#ECECEC] text-center text-9xl lg:text-[13rem] py-5"
@@ -704,7 +704,7 @@ const NavbarHero = () => {
         {/* testimonials   */}
         <div
           ref={testimonialRef}
-          className="bg-red-600 scroll-mt-20 transition-all duration-500"
+          className="bg-gray-600 scroll-mt-20 transition-all duration-500"
         >
           <motion.div
             className="flex flex-col lg:flex-row gap-10 lg:gap-96 justify-between px-5 lg:px-0 pt-10 lg:pt-5"
@@ -895,7 +895,7 @@ const NavbarHero = () => {
         </div>
 
         {/* footer   */}
-        <div className="bg-red-600">
+        <div className="bg-gray-600">
           <motion.div
             className="flex flex-col lg:flex-row justify-between border-b border-[#ECECEC] pb-10 mx-5 text-[#ECECEC]"
             initial={{ opacity: 0 }}
@@ -914,7 +914,7 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
-                    <FaTwitter /> <span>X (FORMERLY TWITTER)</span>
+                    <span> X (FORMERLY TWITTER)</span>
                   </Link>
                 </motion.div>
 
@@ -940,7 +940,6 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
-                    x
                     <FaLinkedin /> <span>LINKEDIN</span>
                   </Link>
                 </motion.div>
