@@ -167,7 +167,7 @@ const NavbarHero = () => {
       {/* navbar hero section   */}
       <div
         ref={heroRef}
-        className="mb-10 bg-[url('/developer3.png')] rounded-3xl mx-10 min-h-screen bg-center bg-no-repeat bg-[length:100%] lg:bg-[length:70%] relative"
+        className="mb-10 bg-[url('/happyguy.png')] min-h-screen bg-center bg-no-repeat bg-[length:100%] lg:bg-[length:70%] relative "
       >
         <motion.div
           className={`fixed w-full z-40 bg-white transition-all duration-300 ${
@@ -193,7 +193,7 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              WORKS
+              WORK
             </motion.a>
             <motion.a
               href="#services"
@@ -274,7 +274,7 @@ const NavbarHero = () => {
                 alt="scrldwnmimg"
                 width={80}
                 height={80}
-                className="pt-40 brightness-30 invert-[36%] sepia-0 saturate-0 hue-rotate-0 contrast-700"
+                className="pt-40 brightness-0 invert-[32%] sepia-[9%] saturate-[400%] hue-rotate-[0deg] contrast-[90%]"
               />
             </motion.div>
           </div>
@@ -914,7 +914,7 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
-                    <span> X (FORMERLY TWITTER)</span>
+                    <FaTwitter /> <span>X (FORMERLY TWITTER)</span>
                   </Link>
                 </motion.div>
 
