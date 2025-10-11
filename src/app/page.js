@@ -167,10 +167,10 @@ const NavbarHero = () => {
       {/* navbar hero section   */}
       <div
         ref={heroRef}
-        className="mb-10 bg-[url('/happyguy.png')] min-h-screen bg-center bg-no-repeat bg-[length:100%] lg:bg-[length:70%] relative "
+        className="mb-10 bg-[url('/myimg.png')] rounded-3xl shadow-black min-h-screen bg-center bg-no-repeat bg-[length:90%] lg:bg-[length:60%] "
       >
         <motion.div
-          className={`fixed w-full z-40 bg-white transition-all duration-300 ${
+          className={`fixed w-full z-40 bg-white/20 backdrop-blur-2xl transition-all duration-300 ${
             isMenuOpen
               ? "h-screen flex items-center justify-center"
               : "h-0 overflow-hidden"
