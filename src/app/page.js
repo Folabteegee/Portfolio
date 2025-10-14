@@ -360,7 +360,7 @@ const NavbarHero = () => {
         <div className="px-5 lg:px-0">
           {/* card 1   */}
           <motion.div
-            className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between mb-10 lg:mb-0 mx-5"
+            className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -368,20 +368,21 @@ const NavbarHero = () => {
           >
             <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
               <div>
-                E-COMMERCE <br />
-                WEBSITE <br />
+                GROOMHOUSE <br />
+                BUSINESS WEB <br />
                 <span className="text-base md:text-lg lg:text-xl font-sora">
-                  -REACTJS, NEXTJS, DUMMYAPI, TAILWINDCSS
+                  REACTJS, NEXTJS, TAILWINDCSS, FRAMERMOTION
                 </span>
               </div>
               <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
                 <div>
-                  An E-commerce web that allows you browse through diverse range
-                  of meticulously crafted garments, designed to bring out your
-                  individuality and cater to your sense of style.
+                  A website for a salon dedicated to providing top-notch
+                  grooming services in a luxurious and relaxing environment.
+                  Committed to enhancing your natural style while ensuring you
+                  feel pampered and rejuvenated.
                 </div>
                 <motion.a
-                  href="https://shopnco.netlify.app/"
+                  href="https://groomhouse.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
@@ -394,8 +395,8 @@ const NavbarHero = () => {
             </div>
             <div className="text-[#ECECEC] lg:w-1/2 lg:mt-0">
               <Image
-                src="/newecommerce.png"
-                alt="ecomimg"
+                src="/salon.png"
+                alt="gcryptoimg"
                 width={800}
                 height={600}
                 className="w-full lg:h-auto h-96 object-cover"
@@ -403,7 +404,7 @@ const NavbarHero = () => {
             </div>
           </motion.div>
 
-          {/* card 1   */}
+          {/* card 2   */}
           <motion.div
             className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
             initial={{ opacity: 0, y: 100 }}
@@ -440,6 +441,51 @@ const NavbarHero = () => {
               <Image
                 src="/landing3.png"
                 alt="gcryptoimg"
+                width={800}
+                height={600}
+                className="w-full lg:h-auto h-96 object-cover"
+              />
+            </div>
+          </motion.div>
+
+          {/* card 3   */}
+          <motion.div
+            className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between mb-10 lg:mb-0 mx-5"
+            initial={{ opacity: 0, y: 100 }}
+            animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.02 }}
+          >
+            <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
+              <div>
+                E-COMMERCE <br />
+                WEBSITE <br />
+                <span className="text-base md:text-lg lg:text-xl font-sora">
+                  -REACTJS, NEXTJS, DUMMYAPI, TAILWINDCSS
+                </span>
+              </div>
+              <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
+                <div>
+                  An E-commerce web that allows you browse through diverse range
+                  of meticulously crafted garments, designed to bring out your
+                  individuality and cater to your sense of style.
+                </div>
+                <motion.a
+                  href="https://shopnco.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View Project
+                </motion.a>
+              </div>
+            </div>
+            <div className="text-[#ECECEC] lg:w-1/2 lg:mt-0">
+              <Image
+                src="/newecommerce.png"
+                alt="ecomimg"
                 width={800}
                 height={600}
                 className="w-full lg:h-auto h-96 object-cover"
