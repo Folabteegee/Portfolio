@@ -167,7 +167,7 @@ const NavbarHero = () => {
       {/* navbar hero section   */}
       <div
         ref={heroRef}
-        className="mb-10 bg-[url('/myimg.png')] rounded-3xl shadow-black min-h-screen bg-center bg-no-repeat bg-[length:90%] lg:bg-[length:60%] "
+        className="mb-10 bg-[url('/happyguy.png')] rounded-3xl shadow-black min-h-screen bg-center bg-no-repeat bg-[length:90%] lg:bg-[length:60%] "
       >
         <motion.div
           className={`fixed w-full z-40 bg-white/20 backdrop-blur-2xl transition-all duration-300 ${
