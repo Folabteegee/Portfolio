@@ -410,6 +410,50 @@ const NavbarHero = () => {
           >
             <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
               <div>
+                dannyacegroup <br />
+                <span className="text-xs md:text-sm lg:text-base font-sora">
+                  REACTJS, NEXTJS, TAILWINDCSS, FRAMERMOTION
+                </span>
+              </div>
+              <div className="pt-4 lg:pt-16 font-sora text-sm md:text-base lg:text-base">
+                <div className="line-clamp-3">
+                  Danny Ace unites 4 innovative brands under 1 ecosystem, each
+                  dedicated to excellence in their respective domains. Discover
+                  the power of this unified innovation platform.
+                </div>
+                <motion.a
+                  href="https://dannyacegroup.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 bg-gray-600 font-mangogrotesque text-lg lg:text-xl border-b-3 border-l-3 border-blue-500 text-white px-3 py-1.5 rounded-md hover:bg-gray-700 transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View Project
+                </motion.a>
+              </div>
+            </div>
+            <div className="text-[#ECECEC] lg:w-1/2 lg:mt-0">
+              <Image
+                src="/dannylogo.png"
+                alt="dannylogo"
+                width={800}
+                height={400}
+                className="w-full lg:h-64 h-48 object-cover"
+              />
+            </div>
+          </motion.div>
+
+          {/* card 1   */}
+          <motion.div
+            className="flex flex-col lg:flex-row border-b-4 border-l-4 border-blue-500 rounded-xl justify-between my-6 lg:mb-0 mx-5 overflow-hidden"
+            initial={{ opacity: 0, y: 100 }}
+            animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.01 }}
+          >
+            <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
+              <div>
                 groomhouse <br />
                 business web <br />
                 <span className="text-xs md:text-sm lg:text-base font-sora">
