@@ -1042,7 +1042,7 @@ const NavbarHero = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    href="https://x.com/afolabi_ta578?t=9Wp2w1ISKya5NA8vsnPkmA&s=09"
+                    href="https://x.com/DevTaiwoo"
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
@@ -1055,7 +1055,7 @@ const NavbarHero = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link
-                    href="https://www.instagram.com/__taiwoafolabi?igsh=MWJ5OHQ3eTVud3d6Zw=="
+                    href="https://www.instagram.com/taye.abc"
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
