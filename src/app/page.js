@@ -66,7 +66,7 @@ const NavbarHero = () => {
         "service_yvou6fs",
         "template_oicz9nb",
         formData,
-        "aCQ7vMKnIUoM_c-fL"
+        "aCQ7vMKnIUoM_c-fL",
       )
       .then(
         (response) => {
@@ -77,7 +77,7 @@ const NavbarHero = () => {
         (error) => {
           console.log("FAILED...", error);
           setSuccessMessage("Failed to send message. Try again.");
-        }
+        },
       )
       .finally(() => {
         setIsSending(false);
@@ -119,18 +119,18 @@ const NavbarHero = () => {
   };
 
   return (
-    <div className="font-mangogrotesque  text-gray-600 text-3xl md:text-4xl lg:text-5xl overflow-hidden">
+    <div className="font-mangogrotesque  text-white text-3xl md:text-4xl lg:text-5xl overflow-hidden">
       {/* Mobile Menu Button */}
       <motion.div
-        className="lg:hidden fixed top-0 left-0 right-0 backdrop-blur-lg bg-white/40 rounded-b-lg flex flex-row justify-between items-center p-4 z-50"
+        className="lg:hidden fixed top-0 left-0 right-0 backdrop-blur-lg bg-black rounded-b-lg flex flex-row justify-between items-center p-4 z-50"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
       >
-        <div className="text-gray-600 pl-4">TAIWO A.</div>
+        <div className="text-white pl-4">taiwo</div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-gray-600 focus:outline-none"
+          className="text-white focus:outline-none"
         >
           {isMenuOpen ? (
             <svg
@@ -170,7 +170,7 @@ const NavbarHero = () => {
         className="mb-10 bg-[url('/happyguy.png')] rounded-3xl shadow-black min-h-screen bg-center bg-no-repeat bg-[length:90%] lg:bg-[length:60%] "
       >
         <motion.div
-          className={`fixed w-full z-40 bg-white/20 backdrop-blur-2xl transition-all duration-300 ${
+          className={`fixed w-full z-40 bg-black backdrop-blur-2xl transition-all duration-300 ${
             isMenuOpen
               ? "h-screen flex items-center justify-center"
               : "h-0 overflow-hidden"
@@ -193,7 +193,7 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              WORK
+              works
             </motion.a>
             <motion.a
               href="#services"
@@ -203,7 +203,7 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              SERVICES
+              services
             </motion.a>
             <motion.a
               href="#about"
@@ -213,7 +213,7 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              ABOUT
+              about
             </motion.a>
             <motion.a
               href="#testimonial"
@@ -223,7 +223,7 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              TESTIMONIAL
+              testimonial
             </motion.a>
             <motion.a
               href="#contact"
@@ -233,27 +233,27 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              CONTACT
+              contact
             </motion.a>
           </motion.div>
         </motion.div>
         <div className="flex flex-row justify-between gap-5 px-5 lg:px-10">
           <div className=" lg:pt-20 pt-40">
             <motion.h1
-              className="text-8xl md:text-9xl lg:text-[16rem] pl-20 lg:pl-60"
+              className="text-6xl md:text-7xl lg:text-[12rem] pl-20 lg:pl-60"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              WEB
+              web &
             </motion.h1>
             <motion.p
-              className="text-8xl md:text-9xl lg:text-[16rem] -mt-4 md:-mt-8 lg:-mt-16 leading-none"
+              className="text-6xl md:text-7xl lg:text-[12rem] -mt-4 md:-mt-8 lg:-mt-16 leading-none"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              DEVELOPER
+              web app developer
             </motion.p>
             <motion.div
               initial={{ opacity: 0 }}
@@ -274,7 +274,7 @@ const NavbarHero = () => {
                 alt="scrldwnmimg"
                 width={80}
                 height={80}
-                className="pt-40 brightness-0 invert-[32%] sepia-[9%] saturate-[400%] hue-rotate-[0deg] contrast-[90%]"
+                className="pt-40 brightness-0 invert"
               />
             </motion.div>
           </div>
@@ -285,7 +285,7 @@ const NavbarHero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <h1 className="italic lg:text-right">
-              A Web Developer with <br /> 3 years of experience <br /> building
+              a web developer with <br /> 4 years of experience <br /> building
               responsive, user-friendly <br /> websites and applications.
             </h1>
           </motion.div>
@@ -296,7 +296,6 @@ const NavbarHero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          TAIWO{" "}
           <motion.span
             className="text-9xl md:text-8xl pl-5 lg:text-[16rem]"
             animate={{
@@ -309,7 +308,7 @@ const NavbarHero = () => {
               ease: "easeInOut",
             }}
           >
-            AFOLABI
+            taiwo
           </motion.span>
         </motion.h1>
         <motion.div
@@ -330,7 +329,7 @@ const NavbarHero = () => {
       {/* works   */}
       <div
         ref={worksRef}
-        className="bg-gray-600 scroll-mt-20 transition-all duration-500"
+        className="bg-blue-950 scroll-mt-20 transition-all duration-500"
       >
         <motion.h1
           className="text-9xl md:text-9xl lg:text-[16rem] text-[#ECECEC] text-center py-6"
@@ -354,28 +353,71 @@ const NavbarHero = () => {
             },
           }}
         >
-          WORKS
+          works
         </motion.h1>
         {/* work cards   */}
         <div className="px-5 lg:px-0">
           {/* card 1   */}
           <motion.div
-            className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
+            className="flex flex-col lg:flex-row border-b-4 border-l-4 border-blue-500 rounded-xl justify-between my-6 lg:mb-0 mx-5 overflow-hidden"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.01 }}
           >
-            <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
+            <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
               <div>
-                GROOMHOUSE <br />
-                BUSINESS WEB <br />
-                <span className="text-base md:text-lg lg:text-xl font-sora">
+                gurusearch <br />
+                <span className="text-xs md:text-sm lg:text-base font-sora">
+                  REACTJS, NEXTJS, TAILWINDCSS, FIREBASE, APIs, FRAMERMOTION
+                </span>
+              </div>
+              <div className="pt-4 lg:pt-16 font-sora text-sm md:text-base lg:text-base">
+                <div className="line-clamp-3">
+                  Revolutionize Your Academic Journey with AI-Powered Research
+                  Excellence
+                </div>
+                <motion.a
+                  href="https://gurusearch.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 bg-gray-600 font-mangogrotesque text-lg lg:text-xl border-b-3 border-l-3 border-blue-500 text-white px-3 py-1.5 rounded-md hover:bg-gray-700 transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View Project
+                </motion.a>
+              </div>
+            </div>
+            <div className="text-[#ECECEC] lg:w-1/2 lg:mt-0">
+              <Image
+                src="/gurulogo5.png"
+                alt="gurulogo"
+                width={800}
+                height={400}
+                className="w-full lg:h-64 h-48 object-cover"
+              />
+            </div>
+          </motion.div>
+
+          {/* card 1   */}
+          <motion.div
+            className="flex flex-col lg:flex-row border-b-4 border-l-4 border-blue-500 rounded-xl justify-between my-6 lg:mb-0 mx-5 overflow-hidden"
+            initial={{ opacity: 0, y: 100 }}
+            animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.01 }}
+          >
+            <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
+              <div>
+                groomhouse <br />
+                business web <br />
+                <span className="text-xs md:text-sm lg:text-base font-sora">
                   REACTJS, NEXTJS, TAILWINDCSS, FRAMERMOTION
                 </span>
               </div>
-              <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
-                <div>
+              <div className="pt-4 lg:pt-16 font-sora text-sm md:text-base lg:text-base">
+                <div className="line-clamp-3">
                   A website for a salon dedicated to providing top-notch
                   grooming services in a luxurious and relaxing environment.
                   Committed to enhancing your natural style while ensuring you
@@ -385,7 +427,7 @@ const NavbarHero = () => {
                   href="https://groomhouse.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
+                  className="inline-block mt-3 bg-gray-600 font-mangogrotesque text-lg lg:text-xl border-b-3 border-l-3 border-blue-500 text-white px-3 py-1.5 rounded-md hover:bg-gray-700 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -398,30 +440,30 @@ const NavbarHero = () => {
                 src="/salon.png"
                 alt="gcryptoimg"
                 width={800}
-                height={600}
-                className="w-full lg:h-auto h-96 object-cover"
+                height={400}
+                className="w-full lg:h-64 h-48 object-cover"
               />
             </div>
           </motion.div>
 
           {/* card 2   */}
           <motion.div
-            className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
+            className="flex flex-col lg:flex-row border-b-4 border-l-4 border-blue-500 rounded-xl justify-between my-6 lg:mb-0 mx-5 overflow-hidden"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.01 }}
           >
-            <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
+            <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
               <div>
-                LEARNFI <br />
-                LANDING PAGE <br />
-                <span className="text-base md:text-lg lg:text-xl font-sora">
+                learnfi <br />
+                landing page <br />
+                <span className="text-xs md:text-sm lg:text-base font-sora">
                   REACTJS, NEXTJS, TAILWINDCSS, ATROPOSJS
                 </span>
               </div>
-              <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
-                <div>
+              <div className="pt-4 lg:pt-16 font-sora text-sm md:text-base lg:text-base">
+                <div className="line-clamp-3">
                   A hands-on, community-driven platform to master blockchain,
                   NFTs, DAOs, DeFi, and more. From zero to on-chain in weeks.
                 </div>
@@ -429,7 +471,7 @@ const NavbarHero = () => {
                   href="https://learnfi.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
+                  className="inline-block mt-3 bg-gray-600 font-mangogrotesque text-lg lg:text-xl border-b-3 border-l-3 border-blue-500 text-white px-3 py-1.5 rounded-md hover:bg-gray-700 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -442,30 +484,30 @@ const NavbarHero = () => {
                 src="/landing3.png"
                 alt="gcryptoimg"
                 width={800}
-                height={600}
-                className="w-full lg:h-auto h-96 object-cover"
+                height={400}
+                className="w-full lg:h-64 h-48 object-cover"
               />
             </div>
           </motion.div>
 
           {/* card 3   */}
           <motion.div
-            className="flex flex-col lg:flex-row border-b-8 border-l-8 border-blue-500 rounded-xl justify-between mb-10 lg:mb-0 mx-5"
+            className="flex flex-col lg:flex-row border-b-4 border-l-4 border-blue-500 rounded-xl justify-between mb-6 lg:mb-0 mx-5 overflow-hidden"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.01 }}
           >
-            <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
+            <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
               <div>
-                E-COMMERCE <br />
-                WEBSITE <br />
-                <span className="text-base md:text-lg lg:text-xl font-sora">
+                e-commerce <br />
+                website <br />
+                <span className="text-xs md:text-sm lg:text-base font-sora">
                   -REACTJS, NEXTJS, DUMMYAPI, TAILWINDCSS
                 </span>
               </div>
-              <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
-                <div>
+              <div className="pt-4 lg:pt-16 font-sora text-sm md:text-base lg:text-base">
+                <div className="line-clamp-3">
                   An E-commerce web that allows you browse through diverse range
                   of meticulously crafted garments, designed to bring out your
                   individuality and cater to your sense of style.
@@ -474,7 +516,7 @@ const NavbarHero = () => {
                   href="https://shopnco.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
+                  className="inline-block mt-3 bg-gray-600 font-mangogrotesque text-lg lg:text-xl border-b-3 border-l-3 border-blue-500 text-white px-3 py-1.5 rounded-md hover:bg-gray-700 transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -487,31 +529,31 @@ const NavbarHero = () => {
                 src="/newecommerce.png"
                 alt="ecomimg"
                 width={800}
-                height={600}
-                className="w-full lg:h-auto h-96 object-cover"
+                height={400}
+                className="w-full lg:h-64 h-48 object-cover"
               />
             </div>
           </motion.div>
 
-          {/* card 2   */}
+          {/* card 4   */}
           <motion.div
-            className="flex flex-col lg:flex-row  border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
+            className="flex flex-col lg:flex-row border-b-4 border-l-4 border-blue-500 rounded-xl justify-between my-6 lg:mb-0 mx-5 overflow-hidden"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.01 }}
           >
-            <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
+            <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
               <div>
-                CRYPTO
+                crypto
                 <br />
-                DASHBOARD <br />
-                <span className="text-base md:text-lg lg:text-xl font-sora">
+                dahboard <br />
+                <span className="text-xs md:text-sm lg:text-base font-sora">
                   REACTJS, NEXTJS, COINGECKOAPI, TAILWINDCSS
                 </span>
               </div>
-              <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
-                <div>
+              <div className="pt-4 lg:pt-16 font-sora text-sm md:text-base lg:text-base">
+                <div className="line-clamp-3">
                   A cryptocurrency tracking dashboard with real-time data
                   fetching, dark mode, and a detailed coin info page.
                 </div>
@@ -520,7 +562,7 @@ const NavbarHero = () => {
                     href="https://tk-cryptodashboard.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
+                    className="inline-block mt-3 bg-gray-600 font-mangogrotesque text-lg lg:text-xl border-b-3 border-l-3 border-blue-500 text-white px-3 py-1.5 rounded-md hover:bg-gray-700 transition-all duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -534,30 +576,30 @@ const NavbarHero = () => {
                 src="/newcrypto.png"
                 alt="gcryptoimg"
                 width={800}
-                height={600}
-                className="w-full lg:h-auto h-96 object-cover"
+                height={400}
+                className="w-full lg:h-64 h-48 object-cover"
               />
             </div>
           </motion.div>
 
-          {/* card 3  */}
+          {/* card 5  */}
           <motion.div
-            className="flex flex-col lg:flex-row  border-b-8 border-l-8 border-blue-500 rounded-xl justify-between my-10 lg:mb-0 mx-5"
+            className="flex flex-col lg:flex-row border-b-4 border-l-4 border-blue-500 rounded-xl justify-between my-6 lg:mb-0 mx-5 overflow-hidden"
             initial={{ opacity: 0, y: 100 }}
             animate={isWorksInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.01 }}
           >
-            <div className="bg-[#ECECEC] lg:w-1/2 text-4xl md:text-5xl lg:text-7xl p-5 lg:p-10">
+            <div className="bg-[#ECECEC] text-black lg:w-1/2 text-3xl md:text-4xl lg:text-5xl p-4 lg:p-6">
               <div>
-                INVOICE <br />
-                GENERATOR <br />
-                <span className="text-base md:text-lg lg:text-xl font-sora">
+                invoice <br />
+                generator <br />
+                <span className="text-xs md:text-sm lg:text-base font-sora">
                   REACTJS, NEXTJS, CONTEXTAPI, TAILWINDCSS
                 </span>
               </div>
-              <div className="pt-10 lg:pt-96 font-sora text-base md:text-lg lg:text-xl">
-                <div>
+              <div className="pt-4 lg:pt-16 font-sora text-sm md:text-base lg:text-base">
+                <div className="line-clamp-3">
                   A web app that simplifies invoice creation with responsive
                   design, customizable themes, and real-time calculations.
                 </div>
@@ -566,7 +608,7 @@ const NavbarHero = () => {
                     href="https://free-invoice-generator.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-4 bg-gray-600 font-mangogrotesque text-xl lg:text-3xl border-b-4 border-l-4 border-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-all duration-300"
+                    className="inline-block mt-3 bg-gray-600 font-mangogrotesque text-lg lg:text-xl border-b-3 border-l-3 border-blue-500 text-white px-3 py-1.5 rounded-md hover:bg-gray-700 transition-all duration-300"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -580,8 +622,8 @@ const NavbarHero = () => {
                 src="/newinvoice2.png"
                 alt="ecomimg"
                 width={800}
-                height={600}
-                className="w-full lg:h-auto h-96 object-cover"
+                height={400}
+                className="w-full lg:h-64 h-48 object-cover"
               />
             </div>
           </motion.div>
@@ -590,10 +632,10 @@ const NavbarHero = () => {
         {/* services   */}
         <div
           ref={servicesRef}
-          className="bg-gray-600 mt-10 lg:mt-6 scroll-mt-20 transition-all duration-500"
+          className="bg-blue-950 scroll-mt-20 transition-all duration-500"
         >
           <motion.div
-            className="text-[#ECECEC] text-center text-9xl lg:text-[13rem] py-5"
+            className="text-[#ECECEC] text-center text-9xl lg:text-[13rem] py-10"
             initial={{ opacity: 0 }}
             animate={
               isServicesInView
@@ -613,7 +655,7 @@ const NavbarHero = () => {
               },
             }}
           >
-            (SERVICES)
+            (services)
           </motion.div>
           <div className="flex items-center justify-center min-h-screen px-5">
             <motion.div
@@ -622,12 +664,12 @@ const NavbarHero = () => {
               initial="hidden"
               animate={isServicesInView ? "visible" : "hidden"}
             >
-              <motion.div variants={fadeIn}>WEB DEVELOPMENT</motion.div>
+              <motion.div variants={fadeIn}>*web development</motion.div>
               <motion.div variants={fadeIn}>
-                RESPONSIVE & FRIENDLY WEBSITES
+                *responsive & friendly websites
               </motion.div>
-              <motion.div variants={fadeIn}>VISUAL LOOKS & LAYOUT</motion.div>
-              <motion.div variants={fadeIn}>INTERACTIVE ELEMENTS</motion.div>
+              <motion.div variants={fadeIn}>*visual looks & layout</motion.div>
+              <motion.div variants={fadeIn}>*interactive elements</motion.div>
             </motion.div>
           </div>
         </div>
@@ -635,7 +677,7 @@ const NavbarHero = () => {
         {/* about   */}
         <div
           ref={aboutRef}
-          className="bg-[#ECECEC] scroll-mt-20 transition-all duration-500"
+          className="bg-[#050101] scroll-mt-20 transition-all duration-500"
         >
           <div className="flex flex-col lg:flex-row justify-between px-5 lg:px-0">
             <motion.div
@@ -664,7 +706,7 @@ const NavbarHero = () => {
                 variants={slideIn}
               >
                 <span className="font-mangogrotesque font-light text-3xl lg:text-5xl">
-                  TAIWO AFOLABI,
+                  taiwo afolabi,
                 </span>
                 <br />
                 a passionate Frontend Engineer
@@ -726,9 +768,9 @@ const NavbarHero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <div className="text-7xl sm:text-6xl lg:text-7xl">
-              TAIWO
+              taiwo
               <br />
-              AFO
+              afo
             </div>
             <motion.div
               className="text-9xl sm:text-8xl md:text-[10rem] lg:text-[16rem] mt-5 lg:mt-0"
@@ -742,7 +784,7 @@ const NavbarHero = () => {
                 ease: "easeInOut",
               }}
             >
-              ABOUT
+              ..about
             </motion.div>
           </motion.div>
         </div>
@@ -750,7 +792,7 @@ const NavbarHero = () => {
         {/* testimonials   */}
         <div
           ref={testimonialRef}
-          className="bg-gray-600 scroll-mt-20 transition-all duration-500"
+          className="bg-blue-950 scroll-mt-20 transition-all duration-500"
         >
           <motion.div
             className="flex flex-col lg:flex-row gap-10 lg:gap-96 justify-between px-5 lg:px-0 pt-10 lg:pt-5"
@@ -832,7 +874,7 @@ const NavbarHero = () => {
             animate={isContactInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            MAKE YOUR BRAND UNFORGETTABLE.
+            make your brand unforgettable.
           </motion.div>
           <motion.div
             className="flex justify-center text-[#ECECEC] items-center pt-10 lg:pt-16 text-3xl lg:text-3xl"
@@ -936,12 +978,12 @@ const NavbarHero = () => {
             animate={isContactInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            UNLEASH YOUR BRAND'S POTENTIAL
+            unleash your brand's potential.
           </motion.div>
         </div>
 
         {/* footer   */}
-        <div className="bg-gray-600">
+        <div className="bg-black">
           <motion.div
             className="flex flex-col lg:flex-row justify-between border-b border-[#ECECEC] pb-10 mx-5 text-[#ECECEC]"
             initial={{ opacity: 0 }}
@@ -960,7 +1002,7 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
-                    <FaTwitter /> <span>X (FORMERLY TWITTER)</span>
+                    <FaTwitter /> <span>X (formerly twitter)</span>
                   </Link>
                 </motion.div>
 
@@ -973,7 +1015,7 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
-                    <FaInstagram /> <span>INSTAGRAM</span>
+                    <FaInstagram /> <span>instagram</span>
                   </Link>
                 </motion.div>
 
@@ -986,7 +1028,7 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
-                    <FaLinkedin /> <span>LINKEDIN</span>
+                    <FaLinkedin /> <span>linkedin</span>
                   </Link>
                 </motion.div>
                 <motion.div
@@ -998,7 +1040,7 @@ const NavbarHero = () => {
                     target="_blank"
                     className="flex items-center justify-center space-x-2 hover:text-[#909090]"
                   >
-                    <FaGithub /> <span>GITHUB</span>
+                    <FaGithub /> <span>github</span>
                   </Link>
                 </motion.div>
               </div>
@@ -1038,7 +1080,7 @@ const NavbarHero = () => {
             }}
             viewport={{ once: true }}
           >
-            TAIWO AFOLABI
+            taiwo afolabi
           </motion.div>
 
           <motion.div
@@ -1048,7 +1090,7 @@ const NavbarHero = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div>TAIWO AFOLABI</div>
+            <div>taiwo</div>
             <div> © {new Date().getFullYear()}</div>
             <motion.div
               className="cursor-pointer hover:underline transition-all duration-300"
@@ -1056,7 +1098,7 @@ const NavbarHero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              BACK TO TOP
+              back to top
             </motion.div>
           </motion.div>
         </div>
